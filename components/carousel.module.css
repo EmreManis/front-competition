@@ -1,0 +1,12 @@
+.swiper {
+    width: 780px;
+    height: 340px;
+  }
+  
+  .swiper span {
+    background-color: white;
+  }
+
+  .swiper img {
+    opacity: 1;
+  }
