@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import classes from "./carousel.module.css";
 
-import tatilBudur from '../../public/tatilBudur.png';
+import tatilBudur from '../../../public/tatilBudur.png';
 
 const Slide = () => {
   let slide = [];

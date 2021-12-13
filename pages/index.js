@@ -2,8 +2,8 @@ import { Fragment } from "react";
 
 import Head from "next/head";
 
-import Slide from "../components/carousel/Carousel";
 import SearchSection from "../components/searchSection/SearchSection";
+import Intro from "../components/introSection/Intro";
 
 
 function HomePage() {
@@ -18,6 +18,7 @@ function HomePage() {
         />
       </Head>
       <SearchSection />
+      <Intro />
     </Fragment>
   );
 }

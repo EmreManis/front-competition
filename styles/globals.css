@@ -19,3 +19,20 @@
 .whiteTone {
     color: #FFFFFF;
 }
+
+.border {
+    border: 1px solid #cfd4da;
+    opacity: 1;
+  }
+  
+  .borderRadiusSection {
+    border-radius: 13px;
+  }
+
+  .borderRadius {
+    border-radius: 6px;
+  }
+
+  .poppin12 {
+    font-size: 0.75rem;
+  }
