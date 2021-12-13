@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.colorCyan {
+    color: #3F536C;
+}

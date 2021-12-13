@@ -2,10 +2,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
 import Image from "next/image";
 
+
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import classes from "./carousel.module.css";
+
+import tatilBudur from '../../public/tatilBudur.png';
 
 const Slide = () => {
   let slide = [];
@@ -13,7 +17,7 @@ const Slide = () => {
       slide.push(
         <SwiperSlide className={classes.swiperslide} key={i}>
           <Image
-            src="/../public/scroll-group.png"
+            src={tatilBudur}
             width={780}
             height={340}
             alt="tatil-budur"

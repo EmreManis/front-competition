@@ -1,0 +1,27 @@
+.navMargin {
+  padding-left: 1.55rem;
+  padding-right: 1.87rem;
+  padding-top: 1.55rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #CFD4DA;;
+}
+.menuItem {
+  padding: 0 1.87rem;
+}
+
+.boxCommon {
+  height: 1.85rem;
+  border: 1px solid var(--unnamed-color-6f7e8f4d);
+  border: 1px solid #6f7e8f4d;
+  border-radius: 50px;
+  opacity: 1;
+}
+
+.boxNumber {
+  width: 9.35rem;
+ 
+}
+
+.buttonLogin {
+  width: 6.6rem;
+}
