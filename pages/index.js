@@ -1,11 +1,14 @@
+import { Fragment } from "react";
+
 import Head from "next/head";
 
 import Slide from "../components/carousel/Carousel";
+import SearchSection from "../components/searchArea/SearchSection";
 
 
 function HomePage() {
   return (
-    <div>
+    <Fragment>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
@@ -14,7 +17,9 @@ function HomePage() {
           rel="stylesheet"
         />
       </Head>
-    </div>
+      <SearchSection />
+      <p>asdasd</p>
+    </Fragment>
   );
 }
 

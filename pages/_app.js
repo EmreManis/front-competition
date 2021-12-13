@@ -1,10 +1,13 @@
-import '../styles/globals.css'
+import "../styles/globals.css";
 
-import MainNavigation from '../components/navigation/MainNavigation';
+import Layout from "../components/layout/Layout";
 
 function MyApp({ Component, pageProps }) {
-
-  return <MainNavigation><Component {...pageProps} /></MainNavigation>
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
-export default MyApp
+export default MyApp;
