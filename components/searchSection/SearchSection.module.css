@@ -1,0 +1,52 @@
+.sectionStyle {
+  top: 7.18rem;
+  width: 73.75rem;
+  height: 14.12rem;
+}
+
+.border {
+  border: 1px solid #cfd4da;
+  opacity: 1;
+}
+
+.borderRadiusSection {
+  border-radius: 13px;
+}
+
+.borderRadius {
+  border-radius: 6px;
+}
+
+.inpHeight {
+  height: 3.125rem;
+}
+
+.inpWidthOtel {
+  width: 25rem;
+}
+
+.inpWidthTarih {
+  width: 17.5rem;
+}
+
+.inpWidthKisi {
+  width: 13.75rem;
+}
+
+.inpMargin {
+  margin-right: 2.125rem;
+}
+
+.buttonArama {
+  background: var(--unnamed-color-2a5ab3) 0% 0% no-repeat padding-box;
+  background: #2a5ab3 0% 0% no-repeat padding-box;
+  border-radius: 60px;
+  opacity: 1;
+  width: 11.25rem;
+}
+
+.borderColorful {
+  background: transparent url("../../public/Group\ 1547.svg") 0% 0% no-repeat padding-box;
+  background-position: bottom;
+  opacity: 1;
+}

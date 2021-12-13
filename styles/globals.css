@@ -4,8 +4,18 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #3F536C;
 }
 
-.colorCyan {
-    color: #3F536C;
+.poppinsRegular {
+    font-weight: 400;
+}
+
+.cyanTone {
+    color: #6F7E90;
+}
+
+.whiteTone {
+    color: #FFFFFF;
 }

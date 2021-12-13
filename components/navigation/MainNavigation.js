@@ -22,12 +22,12 @@ const Navigation = () => {
           className={`${classes.boxNumber} ${classes.boxCommon} mr-4 flex justify-center items-center`}
         >
           <Image src={iconFeather} alt="tatil budur iletisim" />
-          <span className="ml-2.5 text-xs colorCyan">0 850 333 3 33</span>
+          <span className="ml-2.5 text-xs">0 850 333 3 33</span>
         </div>
         <button
           className={`${classes.buttonLogin} ${classes.boxCommon} flex justify-center items-center`}
         >
-          <span className="text-xs colorCyan">Giriş Yapın</span>
+          <span className="text-xs">Giriş Yapın</span>
         </button>
       </div>
     </nav>

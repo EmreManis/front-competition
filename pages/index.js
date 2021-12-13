@@ -3,7 +3,7 @@ import { Fragment } from "react";
 import Head from "next/head";
 
 import Slide from "../components/carousel/Carousel";
-import SearchSection from "../components/searchArea/SearchSection";
+import SearchSection from "../components/searchSection/SearchSection";
 
 
 function HomePage() {
@@ -18,7 +18,6 @@ function HomePage() {
         />
       </Head>
       <SearchSection />
-      <p>asdasd</p>
     </Fragment>
   );
 }
