@@ -1,0 +1,14 @@
+.button {
+  height: 1.85rem;
+  border: 1px solid var(--unnamed-color-6f7e8f4d);
+  border: 1px solid #6f7e8f4d;
+  border-radius: 50px;
+  opacity: 1;
+  width: 6.6rem;
+}
+
+.bannerBg {
+  background: var(--unnamed-color-ffe267) 0% 0% no-repeat padding-box;
+  background: rgba(255, 226, 103, 0.2) 0% 0% no-repeat padding-box;
+  height: 3.75rem;
+}

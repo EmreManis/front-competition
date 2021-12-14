@@ -4,6 +4,7 @@ import Head from "next/head";
 
 import SearchSection from "../components/searchSection/SearchSection";
 import Intro from "../components/introSection/Intro";
+import Banner from "../components/banner/banner";
 
 
 function HomePage() {
@@ -19,6 +20,7 @@ function HomePage() {
       </Head>
       <SearchSection />
       <Intro />
+      <Banner />
     </Fragment>
   );
 }
