@@ -1,0 +1,11 @@
+.nextSeason {
+  height: 35.625rem;
+  background: var(--unnamed-color-f6f5f8) 0% 0% no-repeat padding-box;
+  background: #f6f5f8 0% 0% no-repeat padding-box;
+  padding-left: 5.625rem;
+  padding-right: 5.625rem;
+}
+.card {
+  width: 17.5rem;
+  height: 20rem;
+}
