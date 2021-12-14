@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import classes from "./SearchSection.module.css"
+import classes from "./searchSection.module.css"
 
 import otelAra from "../../public/icons/otelAra.svg";
 import ucusAra from "../../public/icons/ucusAra.svg";

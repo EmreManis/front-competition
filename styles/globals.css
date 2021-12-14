@@ -7,9 +7,24 @@
     font-weight: 500;
     color: #3F536C;
 }
+.widthSearch {
+  width: 73.75rem;
+}
 
 .poppinsRegular {
     font-weight: 400;
+}
+
+.poppins10 {
+  font-size: 0.625rem;
+}
+
+.poppin12 {
+  font-size: 0.75rem;
+}
+
+.poppins14 {
+  font-size: 0.875rem;
 }
 
 .cyanTone {
@@ -33,6 +48,4 @@
     border-radius: 6px;
   }
 
-  .poppin12 {
-    font-size: 0.75rem;
-  }
+

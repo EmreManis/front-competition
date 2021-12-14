@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import classes from "./promo.module.css";
 
-const PromoBox = (props) => {
+const PromoItem = (props) => {
   return (
     <div className="flex w-96 h-40 border borderRadiusSection overflow-hidden">
       <div className="flex flex-col justify-center w-4/6 items-start pl-6">
@@ -13,9 +13,9 @@ const PromoBox = (props) => {
           <span className="whiteTone poppin12 px-4">Fırsatları Gör</span>
         </button>
       </div>  
-        <Image src={props.pic} alt="kus adasi" height={160} objectFit='cover'/>
+        <Image src={props.pic} alt={props.alt} width={240} height={160} objectFit='cover'/>
     </div>
   );
 };
 
-export default PromoBox;
+export default PromoItem;

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import NavigationItem from "./NavigationItem";
 
-import classes from "./Navigation.module.css";
+import classes from "./navigation.module.css";
 import logo from "../../public/logo.svg";
 import iconFeather from "../../public/icons/iconFeather.svg";
 

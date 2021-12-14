@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import classes from "./Navigation.module.css";
+import classes from "./navigation.module.css";
 import arrowDownIcon from "../../public/icons/arrowDown.svg";
 
 

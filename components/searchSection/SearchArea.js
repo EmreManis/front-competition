@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import classes from "./SearchSection.module.css";
+import classes from "./searchSection.module.css";
 
 import bedIcon from "../../public/icons/bed.svg";
 import arrowDownIcon from "../../public/icons/arrowDown.svg";
@@ -20,7 +20,7 @@ const SearchArea = () => {
       </div>
       <div className={`flex border borderRadius ${classes.inpHeight} ${classes.inpWidthKisi} mr-2.5 pl-6`}>
           <Image src={bedIcon} alt="tatil kisi"/>
-        <button className="w-full cyanTone pl-1.5 flex justify-start items-center" type="text"><span className="mr-16">Kişi Sayısı</span><Image src={arrowDownIcon} alt="kisi sayisi"/></button>
+        <button className="w-full cyanTone pl-1.5 flex justify-start items-center" type="text"><span className="mr-16 poppinsRegular">Kişi Sayısı</span><Image src={arrowDownIcon} alt="kisi sayisi"/></button>
       </div>
       <button className={`${classes.buttonArama} ${classes.inpHeight} whiteTone`}>Otel Ara</button>
     </form>
