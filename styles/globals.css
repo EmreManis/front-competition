@@ -27,12 +27,15 @@
   font-size: 0.625rem;
 }
 
-.poppin12 {
+.poppins12 {
   font-size: 0.75rem;
 }
 
 .poppins14 {
   font-size: 0.875rem;
+}
+.poppins20 {
+  font-size: 1.25rem;
 }
 .poppins24 {
   font-size: 1.5rem;
@@ -44,6 +47,10 @@
 
 .blueTone {
   color: #2a5ab3;
+}
+
+.blue115 {
+  color: #115BB9;
 }
 
 .whiteTone {
@@ -72,3 +79,4 @@
   border-radius: 1px;
   opacity: 1;
 }
+
