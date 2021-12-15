@@ -6,6 +6,7 @@ import SearchSection from "../components/searchSection/SearchSection";
 import Intro from "../components/introSection/Intro";
 import Banner from "../components/banner/banner";
 import NextSeason from "../components/nextSeason/NextSeason";
+import TourSection from "../components/tourSection/TourSection";
 
 
 function HomePage() {
@@ -23,6 +24,7 @@ function HomePage() {
       <Intro />
       <Banner />
       <NextSeason />
+      <TourSection />
     </Fragment>
   );
 }

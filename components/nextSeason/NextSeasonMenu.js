@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import SubMenuButton from "../../shared/SubMenuButton";
+
 const NextSeasonMenu = () => {
   return (
     <div className="pt-1.5 mt-12 mb-2.5">
@@ -8,10 +10,9 @@ const NextSeasonMenu = () => {
       </div>
       <div className="flex justify-between">
           <ul className="flex">
-              <li className=""><Link href="/asd"><a><span className="poppinsSemiBold poppins14 borderMenu pb-3">Son Gezdiğiniz Oteller</span></a></Link></li>
-              <li className="px-7"><Link href="/asd"><a><span className="poppinsRegular poppins14">En Çok Aranan Oteller</span></a></Link></li>
-              <li><Link href="/asd"><a><span className="poppinsRegular poppins14">Tükenmek Üzere Olan Oteller</span></a></Link></li>
-              
+            <SubMenuButton title="Son Gezdiğiniz Oteller" isActive={true} />
+            <SubMenuButton title="En Çok Aranan Oteller" padding="px-7"/>
+            <SubMenuButton title="Tükenmek Üzere Olan Oteller"/>       
           </ul>
           <Link href="/asd"><a><span className="poppinsRegular blueTone poppins14 pr-5">Daha fazla göster</span></a></Link>
       </div>

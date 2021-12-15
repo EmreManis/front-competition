@@ -10,7 +10,7 @@ const CardItem = (props) => {
         <Image src={props.img} alt={props.name} width={280} height={160}/>
       <div className="ml-5 mx-3">
         <h1 className="poppins16">{props.name}</h1>
-        <div className={`flex justify-center items-center ${classes.type}`}>
+        <div className={`flex justify-center items-center mt-3 ${classes.type}`}>
           <span className={`poppinsSemiBold poppins10 `}>{props.type}</span>
         </div>
       </div>

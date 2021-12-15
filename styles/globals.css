@@ -75,6 +75,8 @@
 }
 
 .borderMenu {
+  display: inline-block;
+  padding-bottom: 0.75rem;
   border-bottom: 2px solid #4C84CA;
   border-radius: 1px;
   opacity: 1;

@@ -1,0 +1,8 @@
+.tourSection {
+  height: 45.625rem;
+  background: var(--unnamed-color-edf4fd) 0% 0% no-repeat padding-box;
+  background: #edf4fd 0% 0% no-repeat padding-box;
+  padding-left: 5.625rem;
+  padding-right: 5.625rem;
+  overflow: hidden;
+}
