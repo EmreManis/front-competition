@@ -26,7 +26,6 @@ const Slide = () => {
     <div>
       <Swiper
         modules={[Navigation]}
-
         slidesPerView={4}
         // navigation={true}
         className={classes.swiper}
@@ -35,13 +34,13 @@ const Slide = () => {
           prevEl: ".swiper-button-prev",
         }}
       >
-        <button>
-          <span className="swiper-button-prev" />
-        </button>
-        {slide}
-        <button>
-          <span className="swiper-button-next" />
-        </button>
+          <button>
+            <span className="swiper-button-prev" />
+          </button>
+          {slide}
+          <button>
+            <span className="swiper-button-next" />
+          </button>
       </Swiper>
     </div>
   );
