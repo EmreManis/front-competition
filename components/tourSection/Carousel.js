@@ -1,3 +1,5 @@
+import { useState, useRef, useEffect } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Image from "next/image";
@@ -10,6 +12,23 @@ import classes from "./carousel.module.css";
 import tatilBudur from "../../public/tour/tour1.png";
 
 const Slide = () => {
+  const [swiper, setSwiper] = useState();
+  const prevRef = useRef();
+  const nextRef = useRef();
+
+  useEffect(() => {
+    if (swiper) {
+      console.log("Swiper instance:", prevRef.current);
+      swiper.params.navigation.prevEl = prevRef.current;
+      swiper.params.navigation.nextEl = nextRef.current;
+      swiper.navigation.init();
+      swiper.navigation.update();
+    }
+    console.log(prevRef.current);
+  }, [swiper]);
+
+  
+
   let slide = [];
   for (let i = 0; i <= 8; i++) {
     slide.push(
@@ -23,26 +42,24 @@ const Slide = () => {
   }
 
   return (
-    <div>
+    <div className="flex mx-10">
+      <div className="swiper-button-next" ref={prevRef}>
+      </div>
       <Swiper
         modules={[Navigation]}
-
         slidesPerView={4}
         // navigation={true}
         className={classes.swiper}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          prevEl: prevRef?.current,
+          nextEl: nextRef?.current,
         }}
+        onSwiper={setSwiper}
       >
-        <button>
-          <span className="swiper-button-prev" />
-        </button>
         {slide}
-        <button>
-          <span className="swiper-button-next" />
-        </button>
       </Swiper>
+      <div className="swiper-button" ref={nextRef}>
+      </div>
     </div>
   );
 };

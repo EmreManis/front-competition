@@ -86,36 +86,36 @@
   opacity: 1;
 }
 
-.swiper-button-next{
+ .swiper-button-next{
+  margin: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
   background-image: url("../public/carousel/forwardArrow.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
-  right: -16px;
 }
 
-.swiper-button-prev{
-  background-image: url("../public/carousel/backArrow.png");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-}
-.swiper-button-prev, .swiper-button-prev.swiper-container-rtl .swiper-button-next {
-  left: -16px;
-  right: auto;
-
-}
-
-.swiper-button-next::after {
+/* .swiper-button-next::after {
   display: none;
 }
 
 .swiper-button-prev::after {
   display: none;
-}
+} */
 
 .swiperItem {
   width: 14.375rem;
   height: 4.375rem;
 
+} 
+
+.swiper-button {
+  margin: 8px;
+  padding: 6px 14px;
+  cursor: pointer;
+  background-image: url("../public/carousel/backArrow.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
 }
