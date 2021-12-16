@@ -1,5 +1,6 @@
 import TourSectionMenu from "./TourSectionMenu";
 import TourAdv from "./TourAdv";
+import Slide from "./Carousel";
 
 import classes from "./tourSection.module.css"
 
@@ -9,7 +10,7 @@ const TourSection = () => {
       <div className={`width1360 borderRadius26 ${classes.tourSection}`}>
         <TourSectionMenu />
         <TourAdv />
-        <div></div>
+        <Slide />
       </div>
     </section>
   );

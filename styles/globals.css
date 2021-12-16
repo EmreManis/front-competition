@@ -74,6 +74,10 @@
   border-radius: 26px;
 }
 
+.borderRadius10 {
+  border-radius: 10px;
+}
+
 .borderMenu {
   display: inline-block;
   padding-bottom: 0.75rem;
@@ -82,3 +86,36 @@
   opacity: 1;
 }
 
+.swiper-button-next{
+  background-image: url("../public/carousel/forwardArrow.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  right: -16px;
+}
+
+.swiper-button-prev{
+  background-image: url("../public/carousel/backArrow.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+.swiper-button-prev, .swiper-button-prev.swiper-container-rtl .swiper-button-next {
+  left: -16px;
+  right: auto;
+
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiperItem {
+  width: 14.375rem;
+  height: 4.375rem;
+
+}
