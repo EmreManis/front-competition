@@ -87,7 +87,6 @@
 }
 
  .swiper-button-next{
-  margin: 8px;
   padding: 6px 14px;
   cursor: pointer;
   background-image: url("../public/carousel/forwardArrow.png");
@@ -96,13 +95,23 @@
   background-position: center;
 }
 
-/* .swiper-button-next::after {
+.swiper-button-prev{
+  margin: -16px;
+  padding: 6px 14px;
+  cursor: pointer;
+  background-image: url("../public/carousel/backArrow.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-next::after {
   display: none;
 }
 
 .swiper-button-prev::after {
   display: none;
-} */
+}
 
 .swiperItem {
   width: 14.375rem;

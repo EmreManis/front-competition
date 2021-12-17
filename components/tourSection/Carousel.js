@@ -12,20 +12,6 @@ import classes from "./carousel.module.css";
 import tatilBudur from "../../public/tour/tour1.png";
 
 const Slide = () => {
-  const [swiper, setSwiper] = useState();
-  const prevRef = useRef();
-  const nextRef = useRef();
-
-  useEffect(() => {
-    if (swiper) {
-      console.log("Swiper instance:", prevRef.current);
-      swiper.params.navigation.prevEl = prevRef.current;
-      swiper.params.navigation.nextEl = nextRef.current;
-      swiper.navigation.init();
-      swiper.navigation.update();
-    }
-    console.log(prevRef.current);
-  }, [swiper]);
 
   
 
@@ -43,23 +29,18 @@ const Slide = () => {
 
   return (
     <div className="flex mx-10">
-      <div className="swiper-button-next" ref={prevRef}>
-      </div>
+    
       <Swiper
         modules={[Navigation]}
         slidesPerView={4}
         // navigation={true}
         className={classes.swiper}
-        navigation={{
-          prevEl: prevRef?.current,
-          nextEl: nextRef?.current,
-        }}
-        onSwiper={setSwiper}
+        navigation={true}
+ 
       >
         {slide}
       </Swiper>
-      <div className="swiper-button" ref={nextRef}>
-      </div>
+     
     </div>
   );
 };
