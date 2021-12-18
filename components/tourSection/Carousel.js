@@ -1,3 +1,5 @@
+import { useState, useRef, useEffect } from "react";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import Image from "next/image";
@@ -8,8 +10,24 @@ import "swiper/css/navigation";
 import classes from "./carousel.module.css";
 
 import tatilBudur from "../../public/tour/tour1.png";
+import forwardArrow from "../../public/carousel/forwardArrow.png";
+import backArrow from "../../public/carousel/backArrow.png";
 
 const Slide = () => {
+  const [swiper, setSwiper] = useState();
+  const prevRef = useRef();
+  const nextRef = useRef();
+
+  useEffect(() => {
+    if (swiper) {
+      console.log("Swiper instance:", prevRef.current);
+      swiper.params.navigation.prevEl = prevRef.current;
+      swiper.params.navigation.nextEl = nextRef.current;
+      swiper.navigation.init();
+      swiper.navigation.update();
+    }
+  }, [swiper]);
+
   let slide = [];
   for (let i = 0; i <= 8; i++) {
     slide.push(
@@ -23,25 +41,26 @@ const Slide = () => {
   }
 
   return (
-    <div>
+    <div className="flex mx-10">
+      <div className="swiper-button flex justify-center items-center" ref={prevRef}>
+      <Image src={backArrow} width={18} height={18} alt="tatil-budur" />
+      </div>
       <Swiper
         modules={[Navigation]}
         slidesPerView={4}
         // navigation={true}
         className={classes.swiper}
         navigation={{
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          prevEl: prevRef?.current,
+          nextEl: nextRef?.current,
         }}
+        onSwiper={setSwiper}
       >
-          <button>
-            <span className="swiper-button-prev" />
-          </button>
-          {slide}
-          <button>
-            <span className="swiper-button-next" />
-          </button>
+        {slide}
       </Swiper>
+      <div className="swiper-button flex justify-center items-center" ref={nextRef}>
+        <Image src={forwardArrow} width={18} height={18} alt="tatil-budur" />
+      </div>
     </div>
   );
 };
