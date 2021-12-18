@@ -7,6 +7,7 @@ import Intro from "../components/introSection/Intro";
 import Banner from "../components/banner/banner";
 import NextSeason from "../components/nextSeason/NextSeason";
 import TourSection from "../components/tourSection/TourSection";
+import OtelSection from "../components/otelSection/OtelSection";
 
 
 function HomePage() {
@@ -25,6 +26,7 @@ function HomePage() {
       <Banner />
       <NextSeason />
       <TourSection />
+      <OtelSection />
     </Fragment>
   );
 }
