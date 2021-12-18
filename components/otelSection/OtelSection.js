@@ -1,3 +1,5 @@
+import OtelItems from "./OtelItems";
+
 import classes from "./otelSection.module.css";
 
 const OtelSection = () => {
@@ -12,6 +14,7 @@ const OtelSection = () => {
               <h1 className="poppinsRegular">Nasıl bir Tatil istediğinize karar veremediyseniz size önerdiğimiz tatil temalarını inceleyin!</h1>
           </div>
         </div>
+        <OtelItems />
       </div>
     </section>
   );
