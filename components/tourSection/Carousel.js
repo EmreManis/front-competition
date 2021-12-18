@@ -41,8 +41,8 @@ const Slide = () => {
   }
 
   return (
-    <div className="flex mx-10">
-      <div className="swiper-button flex justify-center items-center" ref={prevRef}>
+    <div className="flex mx-10 mt-5">
+      <div className="swiper-button flex justify-center items-center mr-6" ref={prevRef}>
       <Image src={backArrow} width={18} height={18} alt="tatil-budur" />
       </div>
       <Swiper
