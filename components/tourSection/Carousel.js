@@ -58,7 +58,6 @@ const Slide = () => {
 
   useEffect(() => {
     if (swiper) {
-      console.log("Swiper instance:", prevRef.current);
       swiper.params.navigation.prevEl = prevRef.current;
       swiper.params.navigation.nextEl = nextRef.current;
       swiper.navigation.init();
@@ -66,9 +65,9 @@ const Slide = () => {
     }
   }, [swiper]);
 
-  const items = tourList.map((i) => {
+  const items = tourList.map((i, index) => {
     return (
-      <SwiperSlide className="swiperItem" key={i}>
+      <SwiperSlide className="swiperItem" key={index}>
         <div className="flex border borderRadius10 px-2.5 items-center swiperItem">
           <Image
             className="borderRadius"
