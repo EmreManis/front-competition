@@ -1,7 +1,19 @@
 .appsSection {
-    height: 13.75rem;
+  height: 13.75rem;
 }
 
 .appsSectionBg {
-    background-color: #E2F2FA;
+  background-color: #e2f2fa;
+}
+
+.imagePosition {
+  position: relative;
+  top: -1.3rem;
+}
+
+.qrCode {
+  border: 1px solid #3f536c14;
+  opacity: 1;
+  padding: 0.25rem 0.25rem 0 0.25rem;
+  border-radius: 6px;
 }
