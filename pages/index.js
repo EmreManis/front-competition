@@ -8,6 +8,8 @@ import Banner from "../components/banner/banner";
 import NextSeason from "../components/nextSeason/NextSeason";
 import TourSection from "../components/tourSection/TourSection";
 import OtelSection from "../components/otelSection/OtelSection";
+import PromoForm from "../components/promoForm/promoForm";
+import AppsSection from "../components/appsSection/AppsSection";
 
 
 function HomePage() {
@@ -27,6 +29,8 @@ function HomePage() {
       <NextSeason />
       <TourSection />
       <OtelSection />
+      <PromoForm />
+      <AppsSection />
     </Fragment>
   );
 }
