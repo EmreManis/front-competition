@@ -8,7 +8,7 @@ import Banner from "../components/banner/banner";
 import NextSeason from "../components/nextSeason/NextSeason";
 import TourSection from "../components/tourSection/TourSection";
 import OtelSection from "../components/otelSection/OtelSection";
-import PromoForm from "../components/promoForm/promoForm";
+import PromoForm from "../components/promoForm/PromoForm";
 import AppsSection from "../components/appsSection/AppsSection";
 
 

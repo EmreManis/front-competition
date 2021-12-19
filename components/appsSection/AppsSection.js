@@ -11,7 +11,7 @@ import qrCode from "../../public/pics/qr.png";
 
 const AppsSection = () => {
   return (
-    <section className={`flex justify-center mt-15 ${classes.appsSection}`}>
+    <section className={`flex mt-14 justify-center  ${classes.appsSection}`}>
       <div className={`flex width1360 borderRadius26 ${classes.appsSectionBg}`}>
         <div>
           <h1>
