@@ -1,4 +1,6 @@
+import { useState } from "react";
 import Image from "next/image";
+import { usePopper } from "react-popper";
 
 import NavigationItem from "./NavigationItem";
 
@@ -7,16 +9,17 @@ import logo from "../../public/logo.svg";
 import iconFeather from "../../public/icons/iconFeather.svg";
 
 const Navigation = () => {
+  let [referenceElement, setReferenceElement] = useState();
+  let [popperElement, setPopperElement] = useState();
+  let { styles, attributes } = usePopper(referenceElement, popperElement);
   return (
     <nav className={`${classes.navMargin} grid grid-cols-4 `}>
       <div className="justify-start">
         <Image src={logo} alt="tatil budur" />
       </div>
-      <ul className="flex col-span-2 justify-center">
-        <NavigationItem href="/otel" title="Otel" />
-        <NavigationItem href="/tur" title="Tur" />
-        <NavigationItem href="/kampanyalar" title="Kampanyalar" />
-      </ul>
+      <NavigationItem title="Otel" menuItem="Otel"/>
+      <NavigationItem title="Turlar" menuItem="Tur"/>
+ 
       <div className="flex justify-end items-center">
         <div
           className={`${classes.boxNumber} ${classes.boxCommon} mr-4 flex justify-center items-center`}

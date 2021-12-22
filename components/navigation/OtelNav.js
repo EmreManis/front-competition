@@ -7,7 +7,7 @@ import classes from "./navigation.module.css";
 
 import arrowDownIcon from "../../public/icons/arrowDown.svg";
 
-const NavigationItem = props => {
+const OtelNav = () => {
     let [referenceElement, setReferenceElement] = useState();
   let [popperElement, setPopperElement] = useState();
   let { styles, attributes } = usePopper(referenceElement, popperElement);
@@ -17,7 +17,7 @@ const NavigationItem = props => {
           ref={setReferenceElement}
           className={`${classes.menuItem} flex items-center`}
         >
-          {props.title}
+          Otel
           <span className="ml-2 flex justify-center">
             <Image src={arrowDownIcon} alt="tatil budur menu" />
           </span>
@@ -30,7 +30,7 @@ const NavigationItem = props => {
           <div className="grid grid-cols-3">
             <div>
               <ul>
-                <li>{props.menuItem}</li>
+                <li>Dummy1</li>
                 <li>Dummy2</li>
                 <li>Dummy3</li>
               </ul>
@@ -43,4 +43,4 @@ const NavigationItem = props => {
     )
 }
 
-export default NavigationItem;
+export default OtelNav;
