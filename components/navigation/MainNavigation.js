@@ -13,13 +13,14 @@ const Navigation = () => {
   let [popperElement, setPopperElement] = useState();
   let { styles, attributes } = usePopper(referenceElement, popperElement);
   return (
-    <nav className={`${classes.navMargin} grid grid-cols-4 `}>
+    <nav className={`${classes.navMargin} grid grid-cols-3 `}>
       <div className="justify-start">
         <Image src={logo} alt="tatil budur" />
       </div>
-      <NavigationItem title="Otel" menuItem="Otel"/>
-      <NavigationItem title="Turlar" menuItem="Tur"/>
- 
+      <div className="flex justify-center">
+        <NavigationItem title="Otel" menuItem="Otel" />
+        <NavigationItem title="Turlar" menuItem="Tur" />
+      </div>
       <div className="flex justify-end items-center">
         <div
           className={`${classes.boxNumber} ${classes.boxCommon} mr-4 flex justify-center items-center`}
