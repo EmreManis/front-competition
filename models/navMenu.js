@@ -1,12 +1,13 @@
 class navMenu {
     constructor(
         otelType,
-        locations,
+        city,
+        num,
         img
     )
     {
         this.otelType = otelType,
-        this.locations = locations,
+        this.locations = { city , num},
         this.img = img
     }
 }

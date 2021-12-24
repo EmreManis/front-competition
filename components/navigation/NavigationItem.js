@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Popover } from "@headlessui/react";
 import { usePopper } from "react-popper";
 
+import { menuData } from "../../data/menuData";
 import classes from "./navigation.module.css";
 
 import arrowDownIcon from "../../public/icons/arrowDown.svg";
@@ -11,6 +12,8 @@ const NavigationItem = props => {
     let [referenceElement, setReferenceElement] = useState();
   let [popperElement, setPopperElement] = useState();
   let { styles, attributes } = usePopper(referenceElement, popperElement);
+
+console.log(menuData[0].locations);
     return (
         <Popover className="flex col-span-2 justify-center">
         <Popover.Button
