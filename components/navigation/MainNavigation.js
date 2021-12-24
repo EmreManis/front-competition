@@ -3,6 +3,7 @@ import Image from "next/image";
 import { usePopper } from "react-popper";
 
 import NavigationItem from "./NavigationItem";
+import { menuData } from "../../data/menuData"
 
 import classes from "./navigation.module.css";
 import logo from "../../public/logo.svg";
@@ -12,14 +13,16 @@ const Navigation = () => {
   let [referenceElement, setReferenceElement] = useState();
   let [popperElement, setPopperElement] = useState();
   let { styles, attributes } = usePopper(referenceElement, popperElement);
+
   return (
     <nav className={`${classes.navMargin} grid grid-cols-3 `}>
       <div className="justify-start">
         <Image src={logo} alt="tatil budur" />
       </div>
       <div className="flex justify-center">
-        <NavigationItem title="Otel" menuItem="Otel" />
-        <NavigationItem title="Turlar" menuItem="Tur" />
+        <NavigationItem title="Otel" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
+        <NavigationItem title="Turlar" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
+        <NavigationItem title="Kampanyalar" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
       </div>
       <div className="flex justify-end items-center">
         <div

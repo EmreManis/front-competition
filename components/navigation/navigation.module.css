@@ -3,10 +3,10 @@
   padding-right: 1.87rem;
   padding-top: 1.55rem;
   padding-bottom: 1.25rem;
-  border-bottom: 1px solid #CFD4DA;;
+  border-bottom: 1px solid #cfd4da;
 }
 .menuItem {
-  padding-right:1.87rem ;
+  padding-right: 1.87rem;
 }
 
 .boxCommon {
@@ -19,9 +19,27 @@
 
 .boxNumber {
   width: 9.35rem;
- 
 }
 
 .buttonLogin {
   width: 6.6rem;
+}
+
+.menuBg {
+  background-color: #f0f0f0;
+}
+
+.panel {
+  box-shadow: 0px 5px 36px #00000029;
+  overflow: hidden;
+}
+
+.numPadding {
+  padding-top: 1.125px;
+}
+
+.transfer {
+  background: #f9d5c2 0% 0% no-repeat padding-box;
+  border: 1px solid #ed4f21;
+  border-radius: 6px;
 }
