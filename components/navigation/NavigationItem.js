@@ -9,11 +9,14 @@ import classes from "./navigation.module.css";
 import arrowDownIcon from "../../public/icons/arrowDown.svg";
 import forwardIcon from "../../public/icons/forwardIcon.svg";
 import transfer from "../../public/menu/transfer.svg";
+import menuForwardIcon from "../../public/icons/menuForwardIcon.svg";
 
 const NavigationItem = (props) => {
   let [referenceElement, setReferenceElement] = useState();
   let [popperElement, setPopperElement] = useState();
   let { styles, attributes } = usePopper(referenceElement, popperElement);
+
+  const subMenuHandler = () => {};
 
   return (
     <Popover className="flex col-span-2 justify-center">
@@ -32,23 +35,33 @@ const NavigationItem = (props) => {
         style={styles.popper}
         {...attributes.popper}
       >
-        <div className="flex">
-          <div className="pt-8 px-11">
-            <ul>
-              {props.otelType.map((val, index) => (
-                <li className="poppins14 mb-8" key={index}>
-                  {val}
-                </li>
-              ))}
-            </ul>
+        <div className={`flex ${classes.menuHeight}`}>
+          <div className="pt-8 px-11 flex flex-col">
+            {props.otelType.map((val, index) => (
+              <button
+                type="button"
+                onClick={subMenuHandler}
+                className={`poppins14 borderRadius8 ${classes.menuForwardIcon}`}
+                key={index}
+              >
+                <div
+                  className={`flex px-4 justify-between items-center ${classes.buttonSize}`}
+                >
+                  <p className="mr-8">{val}</p>
+                  <span>
+                    <Image src={menuForwardIcon} alt="" />
+                  </span>
+                </div>
+              </button>
+            ))}
           </div>
-          <div className={`flex pt-6 px-8 ${classes.menuBg}`}>
+          <div className={`flex pt-8 px-8 ${classes.menuBg}`}>
             <div>
               <div className="flex">
                 <div>
                   {props.locations.city.map((val, index) => (
                     <span
-                      className="flex flex-col poppinsRegular poppins14 mb-3"
+                      className="flex flex-col poppinsRegular poppins14 mb-3 "
                       key={index}
                     >
                       {val} Otelleri
@@ -68,8 +81,8 @@ const NavigationItem = (props) => {
               </div>
               <div className="mt-8">
                 <Link href="/" passHref>
-                  <span className="blueTone poppins14">
-                    Tümünü Gör
+                  <span className="cursor-pointer">
+                    <span className="blueTone poppins14 mr-1">Tümünü Gör</span>
                     <Image src={forwardIcon} alt="tum oteller" />
                   </span>
                 </Link>
@@ -86,12 +99,16 @@ const NavigationItem = (props) => {
               <div
                 className={`flex justify-center items-center p-1 ${classes.transfer}`}
               >
-                <div className="mr-2 flex items-center">
-                  <Image src={transfer} alt="Transfer Hizmetleri" />
-                </div>
-                <span className="poppins14 orangeEa">
-                  Ulaşım & Transfer Hizmetleri
-                </span>
+                <Link href="/">
+                  <a className="flex">
+                    <div className="mr-2 flex items-center">
+                      <Image src={transfer} alt="Transfer Hizmetleri" />
+                    </div>
+                    <span className="poppins14 orangeEa">
+                      Ulaşım & Transfer Hizmetleri
+                    </span>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>

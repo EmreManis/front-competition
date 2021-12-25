@@ -17,8 +17,17 @@
   opacity: 1;
 }
 
+.menuHeight {
+  height: 26rem;
+}
+
 .boxNumber {
   width: 9.35rem;
+}
+
+.buttonSize {
+  width: 220px;
+  height: 50px;
 }
 
 .buttonLogin {
@@ -42,4 +51,15 @@
   background: #f9d5c2 0% 0% no-repeat padding-box;
   border: 1px solid #ed4f21;
   border-radius: 6px;
+}
+
+.menuForwardIcon span{
+  visibility: hidden;
+}
+.menuForwardIcon:hover {
+  background-color: #f0f0f0;
+}
+
+.menuForwardIcon:hover span{
+  visibility: visible;
 }
