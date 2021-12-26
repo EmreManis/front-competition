@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BasicDateRangePicker from "./DateRangePicker"; 
 
 import classes from "./searchSection.module.css";
 
@@ -12,15 +13,17 @@ const SearchArea = () => {
     <form className="flex">
       <div className={`flex border borderRadius ${classes.inpHeight}  ${classes.inpWidthOtel} mr-2.5 pl-6`}>
           <Image src={mapIcon} alt="tatil budur konaklama"/>
-        <input className="w-full cyanTone pl-4" type="text" value="Otel, Şehir, Bölge veya Tema Adı" />
+        <input className="w-full cyanTone pl-4" type="text" placeholder="Otel, Şehir, Bölge veya Tema Adı" />
       </div>
       <div className={`flex border borderRadius ${classes.inpHeight} ${classes.inpWidthTarih} mr-2.5 pl-6`}>
-          <Image src={calendarIcon} alt="tatil konaklama tarihi"/>
-        <input className="w-full cyanTone pl-1.5" type="text" value="Konaklama Tarihi" />
+        <div className="w-1/4 flex items-center">
+          <Image src={calendarIcon} alt="tatil konaklama tarihi" width={22} height={22}/>
+        </div>
+        <BasicDateRangePicker />
       </div>
       <div className={`flex border borderRadius ${classes.inpHeight} ${classes.inpWidthKisi} mr-2.5 pl-6`}>
           <Image src={bedIcon} alt="tatil kisi"/>
-        <button className="w-full cyanTone pl-1.5 flex justify-start items-center" type="text"><span className="mr-16 poppinsRegular">Kişi Sayısı</span><Image src={arrowDownIcon} alt="kisi sayisi"/></button>
+        <button className="w-full cyanTone pl-1.5 flex justify-start items-center" type="text"><span className="mr-16 poppinsRegular cyanTone">Kişi Sayısı</span><Image src={arrowDownIcon} alt="kisi sayisi"/></button>
       </div>
       <button className={`${classes.buttonArama} ${classes.inpHeight} whiteTone`}>Otel Ara</button>
     </form>

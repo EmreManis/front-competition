@@ -7,6 +7,10 @@
   font-weight: 500;
   color: #3f536c;
 }
+
+input {
+  outline: none;
+}
 .widthSearch {
   width: 73.75rem;
 }
