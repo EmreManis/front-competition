@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 
 import Head from "next/head";
+import Script from "next/script";
 
 import SearchSection from "../components/searchSection/SearchSection";
 import Intro from "../components/introSection/Intro";
@@ -12,7 +13,7 @@ import PromoForm from "../components/promoForm/PromoForm";
 import AppsSection from "../components/appsSection/AppsSection";
 import QuestionSection from "../components/questionSection/QuestionSection";
 
-
+import LocationAutoComplete from "../components/searchSection/LocationAutoComplete";
 
 function HomePage() {
   return (
@@ -25,6 +26,7 @@ function HomePage() {
           rel="stylesheet"
         />
       </Head>
+      <Script strategy="beforeInteractive" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC50MMu9XK3qqdSYdalwZrBHaunjewfmiM&libraries=places"></Script>
       <SearchSection />
       <Intro />
       <Banner />
@@ -34,6 +36,7 @@ function HomePage() {
       <PromoForm />
       <AppsSection />
       <QuestionSection />
+      {/* <LocationAutoComplete /> */}
     </Fragment>
   );
 }
