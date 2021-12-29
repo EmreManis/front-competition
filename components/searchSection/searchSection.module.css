@@ -19,6 +19,14 @@
   width: 12.75rem;
 }
 
+.popKisi {
+  height: 18.25rem;
+}
+
+.popChildShadow {
+  box-shadow: 0px 3px 10px #00000029;
+}
+
 .inpMargin {
   margin-right: 2.125rem;
 }
@@ -31,8 +39,16 @@
   width: 11.25rem;
 }
 
+.buttonKisi {
+  background: #3659ad 0% 0% no-repeat padding-box;
+  border-radius: 590px;
+  width: 11.875rem;
+  height: 2.5rem;
+}
+
 .borderColorful {
-  background: transparent url("../../public/Group\ 1547.svg") 0% 0% no-repeat padding-box;
+  background: transparent url("../../public/Group\ 1547.svg") 0% 0% no-repeat
+    padding-box;
   background-position: bottom;
   opacity: 1;
 }
@@ -40,4 +56,8 @@
 .popPosition {
   left: -17%;
   top: 170%;
+}
+
+.listBox {
+  width: 5.75rem;
 }

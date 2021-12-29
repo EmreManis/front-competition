@@ -1,6 +1,4 @@
-import { useState } from "react";
 import Image from "next/image";
-import { usePopper } from "react-popper";
 
 import NavigationItem from "./NavigationItem";
 import { menuData } from "../../data/menuData"
@@ -10,9 +8,7 @@ import logo from "../../public/logo.svg";
 import iconFeather from "../../public/icons/iconFeather.svg";
 
 const Navigation = () => {
-  let [referenceElement, setReferenceElement] = useState();
-  let [popperElement, setPopperElement] = useState();
-  let { styles, attributes } = usePopper(referenceElement, popperElement);
+
 
   return (
     <nav className={`${classes.navMargin} grid grid-cols-3 `}>
