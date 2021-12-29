@@ -13,7 +13,14 @@ import PromoForm from "../components/promoForm/PromoForm";
 import AppsSection from "../components/appsSection/AppsSection";
 import QuestionSection from "../components/questionSection/QuestionSection";
 
-import LocationAutoComplete from "../components/searchSection/LocationAutoComplete";
+const apiKey = process.env.GOOGLE_MAP_API_KEY;
+
+const nearBySearch = `https://maps.googleapis.com/maps/api/place/nearbysearch/json
+?keyword=cruise
+&location=38.9637%35.2433
+&radius=1500
+&type=restaurant
+&key=${apiKey}`;
 
 function HomePage() {
   return (
@@ -26,7 +33,10 @@ function HomePage() {
           rel="stylesheet"
         />
       </Head>
-      <Script strategy="beforeInteractive" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC50MMu9XK3qqdSYdalwZrBHaunjewfmiM&libraries=places"></Script>
+      <Script
+        strategy="beforeInteractive"
+        src={`https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&query=shaheen%20public&type=lodging`}
+      ></Script>
       <SearchSection />
       <Intro />
       <Banner />
@@ -36,7 +46,6 @@ function HomePage() {
       <PromoForm />
       <AppsSection />
       <QuestionSection />
-      {/* <LocationAutoComplete /> */}
     </Fragment>
   );
 }

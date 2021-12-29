@@ -1,6 +1,8 @@
 import Image from "next/image";
 import BasicDateRangePicker from "./DateRangePicker"; 
 
+import LocationAutoComplete from "./LocationAutoComplete";
+
 import classes from "./searchSection.module.css";
 
 import bedIcon from "../../public/icons/bed.svg";
@@ -13,7 +15,7 @@ const SearchArea = () => {
     <form className="flex">
       <div className={`flex border borderRadius ${classes.inpHeight}  ${classes.inpWidthOtel} mr-2.5 pl-6`}>
           <Image src={mapIcon} alt="tatil budur konaklama"/>
-        <input className="w-full cyanTone pl-4" type="text" placeholder="Otel, Şehir, Bölge veya Tema Adı" />
+        <LocationAutoComplete />
       </div>
       <div className={`flex border borderRadius ${classes.inpHeight} ${classes.inpWidthTarih} mr-2.5 pl-6`}>
         <div className="w-1/4 flex items-center">

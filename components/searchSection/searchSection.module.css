@@ -36,3 +36,8 @@
   background-position: bottom;
   opacity: 1;
 }
+
+.popPosition {
+  left: -17%;
+  top: 170%;
+}
