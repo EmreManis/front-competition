@@ -8,7 +8,7 @@ import isGirisim from "../../public/pics/isGirisim.png";
 
 const SupporterBanner = () => {
   return (
-    <div className={`flex justify-center width1360 mt-10 ${classes.supporter}`}>
+    <div className={`block sm:flex sm:w-11/12 justify-center xl:w-1360 mt-10 ${classes.supporter}`}>
       <div className="flex">
         <div>
           <Image src={milliGurur} alt="milliGurur" />

@@ -15,7 +15,7 @@ const AppsSection = () => {
       className={`flex mt-14 mb-14 justify-center  ${classes.appsSection}`}
     >
       <div
-        className={`flex justify-around width1360 borderRadius26 ${classes.appsSectionBg}`}
+        className={`flex justify-around w-1360 borderRadius26 ${classes.appsSectionBg}`}
       >
         <div className="flex flex-col justify-center">
           <h1 className="poppins20 poppinsSemiBold mb-5">

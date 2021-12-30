@@ -9,7 +9,7 @@ import checkBox from "../../public/icons/checkboxChecked.svg";
 const PromoForm = () => {
   return (
     <section className={`flex justify-center mt-10 ${classes.promoForm}`}>
-      <div className={`flex width1360 borderRadius26 ${classes.promoFormBg}`}>
+      <div className={`flex w-1360 borderRadius26 ${classes.promoFormBg}`}>
         <div>
           <Image src={model} alt="tatilbudur" />
         </div>

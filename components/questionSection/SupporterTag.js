@@ -4,7 +4,7 @@ import classes from "./questionSection.module.css";
 
 const SupporterTag = () => {
   return (
-    <div className={`width1360 justify-center ${classes.supporterTag}`}>
+    <div className={`hidden sm:flex flex-col w-1360 justify-center ${classes.supporterTag}`}>
       <div>
         <h1>Daha Fazla Tatil, TatilBudur!</h1>
         <p>
