@@ -1,0 +1,31 @@
+.campForm {
+  height: 15.625rem;
+}
+
+.campFormBg {
+  background-color: #fec610;
+}
+
+.button {
+  width: 7.25rem;
+  height: 3.125rem;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  border: 1px solid var(--unnamed-color-ffffff);
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #ffffff;
+  border-radius: 60px;
+  opacity: 1;
+}
+
+.inputArea {
+  width: 335px;
+  height: 48px;
+  border: 1px solid var(--unnamed-color-2a5ab3);
+  background: #fec610 0% 0% no-repeat padding-box;
+  border: 1px solid #2a5ab3;
+  border-radius: 6px;
+  opacity: 1;
+}
+.input{
+    width: 80%;
+}

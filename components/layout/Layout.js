@@ -1,4 +1,4 @@
-import MainNavigation from '../navigation/MainNavigation';
+import MainNavigation from '../navBar/MainNavigation';
 
 function Layout(props) {
   return (
