@@ -41,6 +41,9 @@ function HomePage() {
       <InfoSection />
       <Banner />
       <NextSeason />
+      <div className="block md:hidden">
+        <AppsSection />
+      </div>
       <TourSection />
       <OtelSection />
       <CampaignForm />

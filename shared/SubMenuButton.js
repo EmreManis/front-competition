@@ -4,7 +4,7 @@ const SubMenuButton = props => {
   return (
       <li className={props.padding}>
         <button>
-         <span className={`poppinsRegular poppins14 ${props.isActive && active}`}>
+         <span className={`poppinsRegular poppins14 ${props.class} ${props.isActive && active}`}>
             {props.title}
           </span>
         </button>

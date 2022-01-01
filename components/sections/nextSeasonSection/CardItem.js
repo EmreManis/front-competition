@@ -1,16 +1,18 @@
 import Image from "next/image";
 
-import classes from "./nextSeasonSection.module.css";
+import classes from "./nextSeasSect.module.css";
 
 const CardItem = (props) => {
   return (
     <div
       className={`overflow-hidden border borderRadiusSection ${classes.whiteBg} ${classes.card}`}
-    >  
-        <Image src={props.img} alt={props.name} width={280} height={160}/>
+    >
+        <Image src={props.img} alt={props.name} width={280} height={160} />
       <div className="ml-5 mx-3">
         <h1 className="poppins16">{props.name}</h1>
-        <div className={`flex justify-center items-center mt-3 ${classes.type}`}>
+        <div
+          className={`flex justify-center items-center mt-3 ${classes.type}`}
+        >
           <span className={`poppinsSemiBold poppins10 `}>{props.type}</span>
         </div>
       </div>

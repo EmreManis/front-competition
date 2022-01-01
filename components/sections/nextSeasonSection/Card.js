@@ -4,7 +4,7 @@ import { dummyData } from "../../../data/dummyData";
 
 const Card = () => {
   return (
-    <div className="flex justify-between pt-10">
+    <div className="flex justify-between pt-7 md:pt-10 itemsMedia">
       {dummyData.map((object, id) => {
         return (
           <CardItem 

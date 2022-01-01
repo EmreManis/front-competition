@@ -12,14 +12,7 @@
   opacity: 1;
 }
 
-.itemsMedia {
-  width: 85rem;
-}
-
 @media (min-width: 640px) {
-  .itemsMedia {
-      width: 73.75rem;
-  }
   .tourSection {
     height: 45.625rem;
     background: var(--unnamed-color-edf4fd) 0% 0% no-repeat padding-box;

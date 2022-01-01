@@ -2,10 +2,16 @@
   height: 35.625rem;
   background: var(--unnamed-color-f6f5f8) 0% 0% no-repeat padding-box;
   background: #f6f5f8 0% 0% no-repeat padding-box;
-  padding-left: 5.625rem;
   padding-right: 5.625rem;
   overflow: hidden;
 }
+.mobileMenuWidth {
+  width: 31.25rem;
+}
+.nextSeasonPadding {
+  padding-left: 1.25rem;
+}
+
 .card {
   width: 17.5rem;
   height: 20rem;
@@ -18,7 +24,6 @@
   opacity: 0.5;
 }
 
-
 .type {
   width: 105px;
   height: 20px;
@@ -26,5 +31,20 @@
   background: #f6f5f8 0% 0% no-repeat padding-box;
   border-radius: 4px;
   opacity: 0.8;
-  
+}
+.mobileNavMenu {
+  width: 21rem;
+}
+.mobileNavButton {
+  width: 21rem;
+  height: 3.125rem;
+  border: 0.5px solid var(--unnamed-color-6f7e8f);
+  border: 0.5px solid #6f7e8f;
+  border-radius: 6px;
+}
+
+@media (min-width: 640px) {
+  .nextSeasonPadding {
+    padding-left: 5.625rem;
+  }
 }

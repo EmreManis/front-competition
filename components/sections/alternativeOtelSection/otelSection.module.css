@@ -13,14 +13,7 @@
     background-color: #2A5AB3;
 }
 
-.itemsMedia {
-    width: 85rem;
-}
-
 @media (min-width: 640px) {
-    .itemsMedia {
-        width: 73.75rem;
-    }
     .otelSection {
         padding: 4.25rem 5.625rem;
     }

@@ -11,7 +11,7 @@ const OtelSection = () => {
   return (
     <section className="md:flex flex-col items-center mt-10">
       <div
-        className={`xl:w-1360  overflow-hidden borderRadius26 ${classes.otelSection}`}
+        className={`xl:w-1360  overflow-hidden md:borderRadius26 ${classes.otelSection}`}
       >
         <div className="mt-5">
           <div className=" mb-2.5">

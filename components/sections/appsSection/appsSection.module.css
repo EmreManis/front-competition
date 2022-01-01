@@ -1,5 +1,5 @@
 .appsSection {
-  height: 13.75rem;
+  height: 18.5rem;
 }
 
 .appsSectionBg {
@@ -8,7 +8,7 @@
 
 .imagePosition {
   position: relative;
-  top: -1.3rem;
+  top: 1rem;
 }
 
 .qrCode {
@@ -16,4 +16,22 @@
   opacity: 1;
   padding: 0.25rem 0.25rem 0 0.25rem;
   border-radius: 6px;
+}
+
+.downloadButton {
+  width: 154px;
+  height: 40px;
+  background: var(--unnamed-color-2a5ab3) 0% 0% no-repeat padding-box;
+  background: #2a5ab3 0% 0% no-repeat padding-box;
+  border-radius: 60px;
+}
+
+@media (min-width: 640px) {
+  .appsSection {
+    height: 13.75rem;
+  }
+  .imagePosition {
+    position: relative;
+    top: -1.3rem;
+  }
 }

@@ -112,3 +112,13 @@ input {
   height: 4.375rem;
 
 } 
+
+.itemsMedia {
+  width: 85rem;
+}
+
+@media (min-width: 640px) {
+  .itemsMedia {
+      width: 73.75rem;
+  }
+}

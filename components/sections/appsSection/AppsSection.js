@@ -16,13 +16,13 @@ import qrCode from "../../../public/pics/qr.png";
 const AppsSection = () => {
   return (
     <section
-      className={`flex mt-14 mb-14 justify-center  ${classes.appsSection}`}
+      className={`flex mt-8 md:mt-14 md:mb-14 justify-center  ${classes.appsSection}`}
     >
       <div
-        className={`m-5 sm:m-0 flex justify-around w-1360 borderRadius26 ${classes.appsSectionBg}`}
+        className={`m-5 sm:m-0 flex overflow-hidden md:overflow-visible justify-between md:justify-around md:w-1360 borderRadius26 ${classes.appsSectionBg}`}
       >
-        <div className="flex flex-col justify-center">
-          <h1 className="sm:poppins20 poppinsSemiBold mb-5">
+        <div className="flex flex-col text-center md:text-justify justify-center basis-1/2">
+          <h1 className="md:poppins20 poppinsSemiBold mb-5">
             TatilBudur uygulamasını indirin, aklınızdaki tatili hemen planlayın!
           </h1>
           <div className="hidden sm:block">
@@ -33,14 +33,17 @@ const AppsSection = () => {
             <Image src={huaweiIcon} alt="huawei-tatilBudur" />
           </div>
           <div className="block sm:hidden">
-            <Image src={appleSvg} alt="apple-tatilBudur" />
-            <span className="mx-2">
-              <Image src={googleSvg} alt="googleplay-tatilBudur" />
-            </span>
-            <Image src={huaweiSvg} alt="huawei-tatilBudur" />
+            <div className="mb-4">
+              <Image src={appleSvg} alt="apple-tatilBudur" />
+              <span className="mx-4">
+                <Image src={googleSvg} alt="googleplay-tatilBudur" />
+              </span>
+              <Image src={huaweiSvg} alt="huawei-tatilBudur" />
+            </div>
+            <button className={classes.downloadButton}><span className="poppins14 poppinsBold whiteTone">İndir</span></button>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="hidden md:flex flex-col justify-center items-center">
           <div className={classes.qrCode}>
             <Image src={qrCode} alt="qr-tatilBudur" height={140} width={140} />
           </div>
