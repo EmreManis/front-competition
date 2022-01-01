@@ -1,6 +1,6 @@
 .swiper {
-    width: 780px;
-    height: 340px;
+    width: 19.75rem;
+    height: 12.25rem;
   }
   
   .swiper span {
@@ -39,3 +39,9 @@
     width: 23.75rem;
   }
   
+  @media (min-width: 640px) {
+    .swiper {
+      width: 48.75rem;
+      height: 21.25rem;
+    }
+  }

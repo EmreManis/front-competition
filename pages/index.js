@@ -7,7 +7,7 @@ import SearchSection from "../components/sections/searchSection/SearchSection";
 import InfoSection from "../components/sections/infoSlideSection/InfoSection";
 import NextSeason from "../components/sections/nextSeasonSection/NextSeason";
 import TourSection from "../components/sections/tourSection/TourSection";
-import OtelSection from "../components/sections/otelSection/OtelSection";
+import OtelSection from "../components/sections/alternativeOtelSection/OtelSection";
 import CampaignForm from "../components/sections/campaignSection/CampaignForm";
 import AppsSection from "../components/sections/appsSection/AppsSection";
 import QuestionSection from "../components/sections/questionSection/QuestionSection";
@@ -44,7 +44,9 @@ function HomePage() {
       <TourSection />
       <OtelSection />
       <CampaignForm />
-      <AppsSection />
+      <div className="hidden md:block">
+        <AppsSection />
+      </div>
       <QuestionSection />
     </Fragment>
   );

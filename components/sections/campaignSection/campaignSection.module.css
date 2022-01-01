@@ -1,5 +1,5 @@
 .campForm {
-  height: 15.625rem;
+  height: 25.625rem;
 }
 
 .campFormBg {
@@ -28,4 +28,26 @@
 }
 .input{
     width: 80%;
+}
+.widthMediaHeader {
+  width: 90%;
+}
+
+.widthMediaFirsat {
+  width: 80%;
+}
+
+@media (min-width: 640px) {
+  .campForm {
+    height: 15.625rem;
+  }
+
+  .widthMediaFirsat{
+    width: 100%;
+  }
+
+  .widthMediaHeader {
+    width: 100%;
+  }
+
 }

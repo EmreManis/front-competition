@@ -7,8 +7,8 @@ import Discount from "./discount/Discount";
 const InfoSection = () => {
   return (
     <Fragment>
-      <section className="flex justify-center mb-7">
-        <div className="flex justify-between  widthSearch">
+      <section className="md:flex justify-center mb-7">
+        <div className="flex justify-between md:widthSearch">
           <Carousel />
           <Promo />
         </div>

@@ -13,24 +13,24 @@ const SupporterBanner = () => {
         <div>
           <Image src={milliGurur} alt="milliGurur" />
         </div>
-        <div className={`${classes.milliGurur}`}>
+        <div className={`pl-4  ${classes.milliGurur}`}>
           <h3>#milligururbudur</h3>
           <span className="poppinsRegular">
             Tatilbudur.com Basketbol Milli Takımlar ANA SPONSORU
           </span>
         </div>
       </div>
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-9 md:mt-0">
         <div>
           <Image src={is} alt="is bankasi ortakligi" />
         </div>
-        <span className="flex flex-col">
+        <div className="flex pl-4 md:pl-0 flex-col">
           <span>Tatilbudur.com bir </span>
           <span>
             <Image src={isGirisim} alt="is girisimci" />{" "}
           </span>
           <span>ortaklığıdır.</span>
-        </span>
+        </div>
       </div>
     </div>
   );

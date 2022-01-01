@@ -8,8 +8,8 @@ import personSkiing from "../../../../public/icons/person-skiing.svg";
 
 const Discount = () => {
   return (
-    <div className="flex justify-center">
-      <div className="flex flex-col widthSearch">
+    <div className="md:flex justify-center">
+      <div className="flex flex-col md:widthSearch">
         <div className="flex justify-between">
           <div
             className={`flex items-center justify-between border borderRadiusSection px-8 ${classes.discountItem}`}

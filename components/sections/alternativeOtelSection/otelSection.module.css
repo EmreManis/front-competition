@@ -1,0 +1,27 @@
+.otelSection {
+    height: 28.75rem;
+    background-color: #FDF2ED;
+    padding: 2rem 1.25rem;
+}
+
+.otelItems {
+    width: 11.25rem;
+    height: 12.5rem;
+}
+
+.tumunuGor {
+    background-color: #2A5AB3;
+}
+
+.itemsMedia {
+    width: 85rem;
+}
+
+@media (min-width: 640px) {
+    .itemsMedia {
+        width: 73.75rem;
+    }
+    .otelSection {
+        padding: 4.25rem 5.625rem;
+    }
+}

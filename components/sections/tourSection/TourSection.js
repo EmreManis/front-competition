@@ -6,8 +6,8 @@ import classes from "./tourSection.module.css"
 
 const TourSection = () => {
   return (
-    <section className="flex flex-col items-center mt-16">
-      <div className={`w-1360 borderRadius26 ${classes.tourSection}`}>
+    <section className="md:flex flex-col items-center mt-16">
+      <div className={`xl:w-1360 md:borderRadius26 ${classes.tourSection}`}>
         <TourSectionMenu />
         <TourAdv />
         <Slide />

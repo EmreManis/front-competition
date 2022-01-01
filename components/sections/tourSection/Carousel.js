@@ -84,7 +84,7 @@ const Slide = () => {
   });
 
   return (
-    <div className="flex mx-10 mt-5">
+    <div className="hidden md:flex mx-10 mt-5">
       <div
         className="swiper-button flex justify-center items-center mr-6"
         ref={prevRef}

@@ -33,7 +33,7 @@ const otelCard = [
 
 const OtelItems = () => {
   return (
-    <div className="flex justify-between mt-9">
+    <div className={`flex justify-between mt-9 ${classes.itemsMedia}`}>
       {otelCard.map((i, index) => {
         return (
           <div
