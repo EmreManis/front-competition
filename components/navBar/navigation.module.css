@@ -53,13 +53,34 @@
   border-radius: 6px;
 }
 
-.menuForwardIcon span{
+.menuForwardIcon span {
   visibility: hidden;
 }
 .menuForwardIcon:hover {
   background-color: #f0f0f0;
 }
 
-.menuForwardIcon:hover span{
+.menuForwardIcon:hover span {
   visibility: visible;
+}
+
+.mobileMenu {
+  width: 23.5rem;
+  height: 51rem;
+}
+
+.buttonMob {
+  width: 194px;
+  height: 36px;
+  background: #2A5AB3;
+  color:white;
+  border-radius: 26px;
+}
+
+.fontInherit {
+  font-weight: 400;
+}
+
+.fontInherit * {
+  font-weight: inherit;
 }
