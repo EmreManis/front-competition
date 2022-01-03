@@ -13,20 +13,30 @@ import plusCircle from "../../../../public/icons/plus-circle.svg";
 import arrowDownIcon from "../../../../public/icons/arrowDown.svg";
 import bedIcon from "../../../../public/icons/bed.svg";
 
-
-
 const PersonNum = (props) => {
-
   let [referenceElement, setReferenceElement] = useState();
   let [popperElement, setPopperElement] = useState();
-  let { styles, attributes } = usePopper(referenceElement, popperElement, { placement: 'bottom-start'});
+  let { styles, attributes } = usePopper(referenceElement, popperElement, {
+    placement: "bottom-start",
+  });
 
   return (
     <Popover className="flex">
-      <Popover.Button ref={setReferenceElement} className="w-full cyanTone pl-1.5 flex justify-start items-center"> <Image src={bedIcon} alt="tatil kisi"/><span className="ml-1.5 mr-16 poppinsRegular cyanTone">Kişi Sayısı</span><Image src={arrowDownIcon} alt="kisi sayisi"/></Popover.Button>
+      <Popover.Button
+        ref={setReferenceElement}
+        className="w-full cyanTone pl-6 flex md:justify-start items-center"
+      >
+        <Image src={bedIcon} alt="tatil kisi" />
+        <span className="ml-1.5 poppinsRegular cyanTone">
+          Kişi Sayısı
+        </span>
+        <span className="md:ml-14 ml-56">
+          <Image src={arrowDownIcon} alt="kisi sayisi" />
+        </span>
+      </Popover.Button>
 
       <Popover.Panel
-        className={`mt-0.5 borderRadius z-10 bg-white ${classes.popChildShadow}`}  
+        className={`mt-0.5 borderRadius z-10 bg-white ${classes.popChildShadow}`}
         ref={setPopperElement}
         style={styles.popper}
         {...attributes.popper}
@@ -40,9 +50,13 @@ const PersonNum = (props) => {
                 <span className="poppins12">Yetişkin</span>
               </div>
               <div className="poppins14 flex justify-between w-1/2">
-                <button className="w-5 h-5"><Image src={dashCircle} alt="azalt"/></button>
+                <button className="w-5 h-5">
+                  <Image src={dashCircle} alt="azalt" />
+                </button>
                 <span>1</span>
-                <button className="w-5 h-5 flex justify-center"><Image src={plusCircle} alt="arttir"/></button>
+                <button className="w-5 h-5 flex justify-center">
+                  <Image src={plusCircle} alt="arttir" />
+                </button>
               </div>
             </div>
             <div className="flex justify-between">
@@ -50,9 +64,13 @@ const PersonNum = (props) => {
                 <span className="poppins12">Çocuk</span>
               </div>
               <div className="poppins14 flex justify-between w-1/2">
-                <button className="w-5 h-5"><Image src={dashCircle} alt="azalt"/></button>
+                <button className="w-5 h-5">
+                  <Image src={dashCircle} alt="azalt" />
+                </button>
                 <span>2</span>
-                <button className="w-5 h-5 flex justify-center"><Image src={plusCircle} alt="arttir"/></button>
+                <button className="w-5 h-5 flex justify-center">
+                  <Image src={plusCircle} alt="arttir" />
+                </button>
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ import turAra from "../../../public/icons/turAra.svg";
 
 const SearchNav = () => {
     return (
-        <div className="mb-14">
+        <div className="md:mb-14 mb-6">
         <ul className="flex">
           <li className={`${classes.inpMargin} ${classes.borderColorful} h-8`}>
             <button>

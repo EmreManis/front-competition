@@ -11,17 +11,17 @@ import NextSeasMobileNav from "./NextSeasMobileNav";
 
 const NextSeason = () => {
   return (
-    <section className="md:flex flex-col items-center mt-16">
+    <section className="flex flex-row md:flex-col items-center mt-16">
       <div
         className={`xl:w-1360 md:borderRadius26 ${classes.nextSeason} ${classes.nextSeasonPadding}`}
       >
         <div className="flex flex-col ml-12 md:ml-0">
-          <div className="mb-5 mt-10 md:mt-12">
+          <div className="flex justify-center md:justify-start mb-5 mt-10 md:mt-12">
             <h1 className="poppins20 md:poppins24">
               Yazın ilk fırsatlarını kaçırma!
             </h1>
           </div>
-          <div className="block md:hidden">
+          <div className="flex justify-center ml-14 md:hidden">
             <NextSeasMobileNav />
           </div>
         </div>

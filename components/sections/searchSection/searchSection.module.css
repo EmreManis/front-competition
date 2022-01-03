@@ -1,6 +1,10 @@
 .sectionStyle {
   top: 7.18rem;
-  height: 14.12rem;
+ 
+}
+
+.sectionHeight {
+  height: 28rem;
 }
 
 .inpHeight {
@@ -12,11 +16,11 @@
 }
 
 .inpWidthTarih {
-  width: 19.5rem;
+  width: 24rem;
 }
 
 .inpWidthKisi {
-  width: 12.75rem;
+  width: 24rem;
 }
 
 .popKisi {
@@ -36,7 +40,10 @@
   background: #2a5ab3 0% 0% no-repeat padding-box;
   border-radius: 60px;
   opacity: 1;
-  width: 11.25rem;
+}
+
+.buttonWidth {
+  width: 24rem;
 }
 
 .buttonKisi {
@@ -60,4 +67,22 @@
 
 .listBox {
   width: 5.75rem;
+}
+
+@media (min-width: 640px) {
+  .sectionHeight {
+    height: 14.12rem;
+  }
+  
+  .inpWidthTarih {
+    width: 19.5rem;
+  }
+  
+  .inpWidthKisi {
+    width: 12.75rem;
+  }
+
+  .buttonWidth {
+    width: 11.25rem;
+  }
 }

@@ -27,7 +27,7 @@ const Banner = () => {
             </div>
           </div>
           <button
-            className={`ml-28 mt-2 md:ml-0 md:mt-0 ${classes.buttonHeight} ${classes.button}`}
+            className={`ml-16 mt-2 md:ml-0 md:mt-0 ${classes.buttonHeight} ${classes.button}`}
           >
             <span className="text-xs">Giriş Yapın</span>
           </button>
