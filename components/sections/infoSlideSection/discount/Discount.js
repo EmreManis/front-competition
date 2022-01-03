@@ -8,8 +8,23 @@ import personSkiing from "../../../../public/icons/person-skiing.svg";
 
 const Discount = () => {
   return (
-    <div className="md:flex justify-center">
-      <div className="flex flex-col md:widthSearch">
+    <div className="flex justify-center">
+        <div
+            className={`md:hidden flex items-center justify-between border borderRadiusSection px-8 ${classes.discountItem}`}
+          >
+            <h1 className="poppins14 w-3/5">
+              Şimdi Al, <b>4 Ay Sonra</b> Ödemeye Başla
+            </h1>
+            <div>
+              <Image
+                src={calendarDays}
+                alt="4 Ay Sonra ode"
+                width={45}
+                height={38}
+              />
+            </div>
+          </div>
+      <div className="hidden md:flex flex-col md:widthSearch">
         <div className="flex justify-between">
           <div
             className={`flex items-center justify-between border borderRadiusSection px-8 ${classes.discountItem}`}
