@@ -1,36 +1,58 @@
+import { useState } from "react";
 import Image from "next/image";
 
-import classes from "./searchSection.module.css"
+import classes from "./searchSection.module.css";
 
 import otelAra from "../../../public/icons/otelAra.svg";
 import ucusAra from "../../../public/icons/ucusAra.svg";
 import turAra from "../../../public/icons/turAra.svg";
 
+const menuList = [
+  {
+    name: 'Otel Ara',
+    image: otelAra,
+    alt: "tatil budur otel"
+  },
+  {
+    name: 'Uçuş Ara',
+    image: ucusAra,
+    alt: "tatil budur ucus"
+  },
+  {
+    name: 'Tur Ara',
+    image: turAra,
+    alt: "tatil budur tur"
+  },
+]
+
 const SearchNav = () => {
-    return (
-        <div className="md:mb-14 mb-6">
-        <ul className="flex">
-          <li className={`${classes.inpMargin} ${classes.borderColorful} h-8`}>
-            <button>
-              <Image src={otelAra} alt="tatil budur otel" />
-              <span className="pl-2">Otel Ara</span>
-            </button>
-          </li>
-          <li className={classes.inpMargin}>
-            <button>
-              <Image src={ucusAra} alt="tatil budur ucus" />
-              <span className="pl-2 poppinsRegular cyanTone">Uçuş Ara</span>
-            </button>
-          </li>
-          <li className={classes.inpMargin}>
-            <button>
-              <Image src={turAra} alt="tatil budur tur" />
-              <span className="pl-2 poppinsRegular cyanTone">Tur Ara</span>
-            </button>
-          </li>
-        </ul>
-      </div>
-    )
-} 
+
+  const [isActive, setIsActive] = useState(0);
+
+  const activeHandler = (id) => {
+    setIsActive(id);
+  }
+
+  return (
+    <div className="md:mb-14 mb-6">
+      <ul className="flex">
+        {menuList.map((obj, id) => {
+          return (
+            <li
+              key={id}
+              className={`h-8 ${classes.inpMargin} ${isActive === id && classes.borderColorful} `}
+            >
+              <button  isActive={isActive === id ? true : false} 
+                  onClick={() =>activeHandler(id)}>
+                <Image src={obj.image} alt={obj.alt} />
+                <span className={`pl-2 ${isActive === id ? "" : "poppinsRegular cyanTone"}`}>{obj.name}</span>
+              </button>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
 
 export default SearchNav;

@@ -43,9 +43,7 @@ const MobNavMenu = (props) => {
             <div className="flex flex-col">
               <div className="flex justify-between">
                 <Image src={account} alt="uyelik" />
-                <button onClick={async () => {
-              close()
-            }}>
+                <button onClick={close}>
                   <Image src={closeMenu} alt="" />
                 </button>
               </div>
