@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import SubMenuButton from "./SubMenuButton";
 
+import classes from "./subMenu.module.css";
+
 const SubMenuNav = (props) => {
     const [isActive, setIsActive] = useState(0);
 
@@ -17,7 +19,7 @@ const SubMenuNav = (props) => {
                 <SubMenuButton 
                   title={name} 
                   key={id} 
-                  padding={props.isPadding[id] && "px-7"} 
+                  padding={`${props.givePadding[id] && classes.paddingMenu}`} 
                   isActive={isActive === id ? true : false} 
                   onClick={() =>activeHandler(id)}/>
                   )

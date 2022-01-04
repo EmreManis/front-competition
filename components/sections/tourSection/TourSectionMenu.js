@@ -14,7 +14,7 @@ const TourSectionMenu = () => {
           <h1 className="block text-center md:hidden poppins24">Turlar</h1>
       </div>
       <div className={`flex justify-between ${classes.itemsMedia}`}>
-        <SubMenuNav menuList={menuList} isPadding={isPadding}/>
+        <SubMenuNav menuList={menuList} givePadding={isPadding}/>
       </div>
     </div>
     )
