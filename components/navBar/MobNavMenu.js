@@ -2,7 +2,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { Popover } from "@headlessui/react";
 import { usePopper } from "react-popper";
-import Link from "next/link";
 
 import classes from "./navigation.module.css";
 

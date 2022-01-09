@@ -36,7 +36,8 @@ const NavigationItem = (props) => {
         {...attributes.popper}
       >
         <div className={`flex ${classes.menuHeight}`}>
-          <div className="pt-8 px-11 flex flex-col">
+          {/* main menu */}
+          <div className="pt-8 px-11 flex flex-col" id="mainMenu">
             {props.otelType.map((val, index) => (
               <button
                 type="button"
@@ -56,6 +57,7 @@ const NavigationItem = (props) => {
             ))}
           </div>
           <div className={`flex pt-8 px-8 ${classes.menuBg}`}>
+              {/* sub menu */}
             <div>
               <div className="flex">
                 <div>

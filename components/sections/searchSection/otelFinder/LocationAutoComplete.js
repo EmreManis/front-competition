@@ -26,7 +26,7 @@ const LocationAutoComplete = () => {
     setCoordinates(latLng);
   };
   return (
-    <div className="w-full cyanTone flex items-center justify-center">
+    <div className="w-full cyanTone flex items-center justify-center ml-1">
       <PlacesAutocomplete
         value={address}
         searchOptions={searchOptions}

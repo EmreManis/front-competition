@@ -66,7 +66,15 @@
 }
 
 .listBox {
-  width: 5.75rem;
+  width: 5.625rem;
+}
+
+.itemHovered {
+  cursor: pointer;
+}
+
+.itemHovered:hover {
+  background-color: #f0f0f0;
 }
 
 @media (min-width: 640px) {
