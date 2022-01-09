@@ -1,9 +1,7 @@
 !!! Note this project is not pixel-perfect. Just made 1 breakpoint(640px) to show my responsive knowledge
 
 !!! Search area autoComplete icin Hotel api leri arastirdim ama ucretsiz demo app yapmak imkansiz gibi birsey. Development icin 
-
 30 dakikalik gecici tokenler ile istedigin dataya ulasilabiliyor ya da direkt firma bilgileri isteniyor. Google Places ile
-
 2 veya daha fazla kademede istenilen dataya ulasiliyor. 
 
 
