@@ -8,8 +8,7 @@ import trLocale from "date-fns/locale/tr";
 
 
 
-export default function BasicDateRangePicker() {
-  const [value, setValue] = useState([null, null]);
+export default function BasicDateRangePicker(props) {
   const today = new Date();
 
   return (
@@ -17,11 +16,9 @@ export default function BasicDateRangePicker() {
       <DateRangePicker
         startText="Check-in"
         endText="Check-out"
-        value={value}
+        value={props.value}
         minDate={today}
-        onChange={(newValue) => {
-          setValue(newValue);
-        }}
+        onChange={( newValue) => props.dateHandler(newValue)}
         renderInput={(startProps, endProps) => (
           <Fragment>
             <TextField

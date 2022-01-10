@@ -15,12 +15,6 @@ import Banner from "../components/banner/Banner";
 
 const apiKey = process.env.GOOGLE_MAP_API_KEY;
 
-const nearBySearch = `https://maps.googleapis.com/maps/api/place/nearbysearch/json
-?keyword=cruise
-&location=38.9637%35.2433
-&radius=1500
-&type=restaurant
-&key=${apiKey}`;
 
 function HomePage() {
   return (
@@ -28,14 +22,10 @@ function HomePage() {
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap&query=pizza"
-          rel="stylesheet"
-        />
       </Head>
       <Script
         strategy="beforeInteractive"
-        src={`https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&query=shaheen%20public&type=lodging`}
+        src={`https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&query=shaheen%20public`}
       ></Script>
       <SearchSection />
       <InfoSection />

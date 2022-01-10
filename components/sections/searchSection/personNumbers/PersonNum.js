@@ -13,45 +13,45 @@ import plusCircle from "../../../../public/icons/plus-circle.svg";
 import arrowDownIcon from "../../../../public/icons/arrowDown.svg";
 import bedIcon from "../../../../public/icons/bed.svg";
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "incrementKid":
-      if (state.kidNumber < 5) {
-        return {
-          ...state,
-          kidNumber: state.kidNumber + 1,
-        };
-      } else return { ...state };
+// function reducer(state, action) {
+//   switch (action.type) {
+//     case "incrementKid":
+//       if (state.kidNumber < 5) {
+//         return {
+//           ...state,
+//           kidNumber: state.kidNumber + 1,
+//         };
+//       } else return { ...state };
 
-    case "decrementKid":
-      if (state.kidNumber > 0) {
-        return {
-          ...state,
-          kidNumber: state.kidNumber - 1,
-        };
-      } else return { ...state };
-    case "incrementPerson":
-      if (state.personNumber < 6) { 
-        return {
-          ...state,
-          personNumber: state.personNumber + 1,
-        };
-      } else return { ...state };  
-    case "decrementPerson":
-      if (state.personNumber > 1) {
-        return {
-          ...state,
-          personNumber: state.personNumber - 1,
-        };
-      } else return { ...state };
-  }
-}
+//     case "decrementKid":
+//       if (state.kidNumber > 0) {
+//         return {
+//           ...state,
+//           kidNumber: state.kidNumber - 1,
+//         };
+//       } else return { ...state };
+//     case "incrementPerson":
+//       if (state.personNumber < 6) { 
+//         return {
+//           ...state,
+//           personNumber: state.personNumber + 1,
+//         };
+//       } else return { ...state };  
+//     case "decrementPerson":
+//       if (state.personNumber > 1) {
+//         return {
+//           ...state,
+//           personNumber: state.personNumber - 1,
+//         };
+//       } else return { ...state };
+//   }
+// }
 
 const PersonNum = (props) => {
-  const initialState = {
-    personNumber: 1,
-    kidNumber: 0,
-  };
+  // const initialState = {
+  //   personNumber: 1,
+  //   kidNumber: 0,
+  // };
 
   let [referenceElement, setReferenceElement] = useState();
   let [popperElement, setPopperElement] = useState();
@@ -59,14 +59,12 @@ const PersonNum = (props) => {
     placement: "bottom-start",
   });
 
-  const [state, dispatch] = useReducer(reducer, initialState);
+  // const [state, dispatch] = useReducer(reducer, initialState);
 
-  const incrementHandler = (event, type) => {
-    event.preventDefault();
-    dispatch({ type: type });
-  };
-
-  console.log(state)
+  // const incrementHandler = (event, type) => {
+  //   event.preventDefault();
+  //   dispatch({ type: type });
+  // };
 
   return (
     <Popover className="flex">
@@ -97,15 +95,15 @@ const PersonNum = (props) => {
               </div>
               <div className="poppins14 flex justify-between basis-1/2">
                 <button
-                  className={`w-5 h-5 ${state.personNumber === 1 && "pointer-events-none opacity-50"}`}
-                  onClick={(e) => incrementHandler(e, "decrementPerson")}
+                  className={`w-5 h-5 ${props.personNumber === 1 && "pointer-events-none opacity-50"}`}
+                  onClick={(e) => props.stateHandler(e, "decrementPerson")}
                 >
                   <Image src={dashCircle} alt="azalt" />
                 </button>
-                <span>{state.personNumber}</span>
+                <span>{props.personNumber}</span>
                 <button
-                  className={`w-5 h-5 flex justify-center ${state.personNumber === 6 && "pointer-events-none opacity-50"}`}
-                  onClick={(e) => incrementHandler(e, "incrementPerson")}
+                  className={`w-5 h-5 flex justify-center ${props.personNumber === 6 && "pointer-events-none opacity-50"}`}
+                  onClick={(e) => props.stateHandler(e, "incrementPerson")}
                 >
                   <Image src={plusCircle} alt="arttir" />
                 </button>
@@ -117,15 +115,15 @@ const PersonNum = (props) => {
               </div>
               <div className="poppins14 flex justify-between basis-1/2">
                 <button
-                  className={`w-5 h-5 ${state.kidNumber === 0 && "pointer-events-none opacity-50"}`}
-                  onClick={(e) => incrementHandler(e, "decrementKid")}
+                  className={`w-5 h-5 ${props.kidNumber === 0 && "pointer-events-none opacity-50"}`}
+                  onClick={(e) => props.stateHandler(e, "decrementKid")}
                 >
                   <Image src={dashCircle} alt="azalt" />
                 </button>
-                <span>{state.kidNumber}</span>
+                <span>{props.kidNumber}</span>
                 <button
-                  className={`w-5 h-5 flex justify-center ${state.kidNumber === 5 && "pointer-events-none opacity-50"}`}
-                  onClick={(e) => incrementHandler(e, "incrementKid")}
+                  className={`w-5 h-5 flex justify-center ${props.kidNumber === 5 && "pointer-events-none opacity-50"}`}
+                  onClick={(e) => props.stateHandler(e, "incrementKid")}
                 >
                   <Image src={plusCircle} alt="arttir" />
                 </button>

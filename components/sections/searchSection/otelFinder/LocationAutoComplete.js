@@ -12,8 +12,8 @@ const searchOptions = {
   types: ["(cities)"],
 };
 
-const LocationAutoComplete = () => {
-  const [address, setAdress] = useState("");
+const LocationAutoComplete = (props) => {
+  // const [address, setAdress] = useState("");
   const [coordinates, setCoordinates] = useState({
     lat: null,
     lng: null,
@@ -22,15 +22,22 @@ const LocationAutoComplete = () => {
   const handleSelect = async (value) => {
     const results = await geocodeByAddress(value);
     const latLng = await getLatLng(results[0]);
-    setAdress(value);
+    props.addressHandler(value);
     setCoordinates(latLng);
   };
+
+//   const handleChange = address => {
+//     setAdress(address);
+//   };
+
+// console.log(address)
+
   return (
     <div className="w-full cyanTone flex items-center justify-center ml-1">
       <PlacesAutocomplete
-        value={address}
+        value={props.address}
         searchOptions={searchOptions}
-        onChange={setAdress}
+        onChange={(value) =>props.addressHandler(value)}
         onSelect={handleSelect}
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => {
