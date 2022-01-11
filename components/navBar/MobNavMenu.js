@@ -5,11 +5,11 @@ import { usePopper } from "react-popper";
 
 import classes from "./navigation.module.css";
 
-import arrowDownIcon from "../../public/icons/arrowDown.svg";
-import menuForwardIcon from "../../public/icons/menuForwardIcon.svg";
+import arrowDownIcon from "../../public/icons/arrowDown.webp";
+import menuForwardIcon from "../../public/icons/menuForwardIcon.webp";
 import account from "../../public/icons/person.svg";
-import closeMenu from "../../public/icons/close.svg";
-import burgerMenu from "../../public/icons/menu.svg";
+import closeMenu from "../../public/icons/close.webp";
+import burgerMenu from "../../public/icons/menu.webp";
 
 const MobNavMenu = (props) => {
   let [referenceElement, setReferenceElement] = useState();
@@ -43,7 +43,7 @@ const MobNavMenu = (props) => {
               <div className="flex justify-between">
                 <Image src={account} alt="uyelik" />
                 <button onClick={close}>
-                  <Image src={closeMenu} alt="" />
+                  <Image src={closeMenu} alt="" width={18} height={18}/>
                 </button>
               </div>
               <span className="poppins14 mb-4">
@@ -56,15 +56,15 @@ const MobNavMenu = (props) => {
             <div className="mt-6">
               <div className="flex justify-between items-center border-y-2 h-16">
                 <span>Oteller</span>
-                <Image src={arrowDownIcon} alt="" />
+                <Image src={arrowDownIcon} alt="" width={7} height={5}/>
               </div>
               <div className="flex justify-between items-center border-b-2 h-16">
                 <span>Uçuşlar</span>
-                <Image src={menuForwardIcon} alt="" />
+                <Image src={menuForwardIcon} alt=""/>
               </div>
               <div className="flex justify-between items-center border-b-2 h-16">
                 <span>Turlar</span>
-                <Image src={arrowDownIcon} alt="" />
+                <Image src={arrowDownIcon} alt=""width={7} height={5} />
               </div>
               <div className="flex justify-between items-center border-b-2 h-16">
                 <span>Kampanyalar</span>

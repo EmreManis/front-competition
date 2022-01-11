@@ -6,10 +6,10 @@ import Link from "next/link";
 
 import classes from "./navigation.module.css";
 
-import arrowDownIcon from "../../public/icons/arrowDown.svg";
-import forwardIcon from "../../public/icons/forwardIcon.svg";
-import transfer from "../../public/menu/transfer.svg";
-import menuForwardIcon from "../../public/icons/menuForwardIcon.svg";
+import arrowDownIcon from "../../public/icons/arrowDown.webp";
+import forwardIcon from "../../public/icons/forwardIcon.webp";
+import transfer from "../../public/menu/transfer.webp";
+import menuForwardIcon from "../../public/icons/menuForwardIcon.webp";
 
 const NavigationItem = (props) => {
   let [referenceElement, setReferenceElement] = useState();
@@ -26,7 +26,7 @@ const NavigationItem = (props) => {
       >
         {props.title}
         <span className="ml-2 flex justify-center">
-          <Image src={arrowDownIcon} alt="tatil budur menu" />
+          <Image src={arrowDownIcon} alt="tatil budur menu" width={7} height={5}/>
         </span>
       </Popover.Button>
       <Popover.Panel

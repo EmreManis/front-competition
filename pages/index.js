@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, Suspense, lazy } from "react";
 
 import Head from "next/head";
 import Script from "next/script";
@@ -13,8 +13,8 @@ import AppsSection from "../components/sections/appsSection/AppsSection";
 import QuestionSection from "../components/sections/questionSection/QuestionSection";
 import Banner from "../components/banner/Banner";
 
-const apiKey = process.env.GOOGLE_MAP_API_KEY;
 
+const apiKey = process.env.GOOGLE_MAP_API_KEY;
 
 function HomePage() {
   return (
@@ -29,18 +29,18 @@ function HomePage() {
       ></Script>
       <SearchSection />
       <InfoSection />
-      <Banner />
-      <NextSeason />
-      <div className="block md:hidden">
-        <AppsSection />
-      </div>
-      <TourSection />
-      <OtelSection />
-      <CampaignForm />
-      <div className="hidden md:block">
-        <AppsSection />
-      </div>
-      <QuestionSection />
+        <Banner />
+        <NextSeason />
+        <div className="block md:hidden">
+          <AppsSection />
+        </div>
+        <TourSection />
+        <OtelSection />
+        <CampaignForm />
+        <div className="hidden md:block">
+          <AppsSection />
+        </div>
+        <QuestionSection />
     </Fragment>
   );
 }

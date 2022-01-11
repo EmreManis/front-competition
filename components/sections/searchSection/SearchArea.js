@@ -80,7 +80,7 @@ console.log(address)
       <div
         className={`flex border borderRadius ${classes.inpHeight}  ${classes.inpWidthOtel} mr-2.5 pl-6`}
       >
-        <Image src={mapIcon} alt="tatil budur konaklama" />
+        <Image src={mapIcon} alt="tatil budur konaklama"/>
         <LocationAutoComplete address={address} addressHandler={addressHandler}/>
       </div>
       <div

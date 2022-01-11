@@ -12,8 +12,8 @@ import tour1 from "../../../public/tour/tour1.png";
 import tour2 from "../../../public/tour/tour2.png";
 import tour3 from "../../../public/tour/tour3.png";
 import tour4 from "../../../public/tour/tour4.png";
-import forwardArrow from "../../../public/carousel/forwardArrow.png";
-import backArrow from "../../../public/carousel/backArrow.png";
+import forwardArrow from "../../../public/carousel/forwardArrow.webp";
+import backArrow from "../../../public/carousel/backArrow.webp";
 
 const Slide = () => {
   const tourList = [

@@ -6,7 +6,7 @@ import classes from "./nextSeasSect.module.css";
 import { Menu } from "@headlessui/react";
 import { usePopper } from "react-popper";
 
-import arrowDown from "../../../public/icons/arrowDown.svg";
+import arrowDown from "../../../public/icons/arrowDown.webp";
 
 export default function Example() {
     let [referenceElement, setReferenceElement] = useState();
@@ -20,7 +20,7 @@ export default function Example() {
             className={`bg-white flex justify-between items-center px-4 ${classes.mobileNavButton}`}
           >
             Son Gezdiğiniz Oteller
-            <Image src={arrowDown} alt=""/>
+            <Image src={arrowDown} alt="" width={7} height={5}/>
           </Menu.Button>
         <Menu.Items
           ref={setPopperElement}

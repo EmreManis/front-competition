@@ -6,7 +6,7 @@ import NextSeasonNav from "./NextSeasNav";
 
 import classes from "./nextSeasSect.module.css";
 
-import forwardIcon from "../../../public/icons/forwardIcon.svg";
+import forwardIcon from "../../../public/icons/forwardIcon.webp";
 import NextSeasMobileNav from "./NextSeasMobileNav";
 
 const NextSeason = () => {

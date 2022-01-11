@@ -2,8 +2,8 @@ import PromotionItem from "./PromotionItem";
 
 import classes from "../infoSection.module.css";
 
-import balonPic from "../../../../public/balon.png";
-import clarisseMeyer from "../../../../public/clarisseMeyer.png";
+import balonPic from "../../../../public/balon.webp";
+import clarisseMeyer from "../../../../public/clarisseMeyer.jpg";
 
 const Promo = () => {
     return (

@@ -5,7 +5,7 @@ import OtelItems from "./OtelItems";
 
 import classes from "./otelSection.module.css";
 
-import forwardIcon from "../../../public/icons/forwardIcon.svg";
+import forwardIcon from "../../../public/icons/forwardIcon.webp";
 
 const OtelSection = () => {
   return (

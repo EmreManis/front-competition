@@ -4,7 +4,7 @@ import classes from "../infoSection.module.css";
 
 import calendarDays from "../../../../public/icons/calendar-days.svg";
 import moonStars from "../../../../public/icons/moon-stars.svg";
-import personSkiing from "../../../../public/icons/person-skiing.svg";
+import personSkiing from "../../../../public/icons/person-skiing.webp";
 
 const Discount = () => {
   return (

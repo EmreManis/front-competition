@@ -4,7 +4,7 @@ import NavigationItem from "./NavigationItem";
 import { menuData } from "../../data/menuData"
 
 import classes from "./navigation.module.css";
-import logo from "../../public/logo.svg";
+import logo from "../../public/logo.webp";
 import iconFeather from "../../public/icons/iconFeather.svg";
 
 const Navigation = () => {
@@ -13,7 +13,7 @@ const Navigation = () => {
   return (
     <nav className={`${classes.navMargin} grid grid-cols-3 `}>
       <div className="justify-start">
-        <Image src={logo} alt="tatil budur" />
+        <Image src={logo} alt="tatil budur" width={218} height={42}/>
       </div>
       <div className="flex justify-center">
         <NavigationItem title="Otel" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>

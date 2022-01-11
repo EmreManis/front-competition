@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import classes from "./searchSection.module.css";
 
-import otelAra from "../../../public/icons/otelAra.svg";
-import ucusAra from "../../../public/icons/ucusAra.svg";
+import otelAra from "../../../public/icons/otelAra.webp";
+import ucusAra from "../../../public/icons/ucusAra.webp";
 import turAra from "../../../public/icons/turAra.svg";
 
 const menuList = [
@@ -16,7 +16,9 @@ const menuList = [
   {
     name: 'Uçuş Ara',
     image: ucusAra,
-    alt: "tatil budur ucus"
+    alt: "tatil budur ucus",
+    widthHeight: 13,
+
   },
   {
     name: 'Tur Ara',
@@ -44,7 +46,7 @@ const SearchNav = () => {
             >
               <button  isActive={isActive === id ? true : false} 
                   onClick={() =>activeHandler(id)}>
-                <Image src={obj.image} alt={obj.alt} />
+                <Image src={obj.image} alt={obj.alt} width={obj.widthHeight} height={obj.widthHeight}/>
                 <span className={`pl-2 ${isActive === id ? "" : "poppinsRegular cyanTone"}`}>{obj.name}</span>
               </button>
             </li>

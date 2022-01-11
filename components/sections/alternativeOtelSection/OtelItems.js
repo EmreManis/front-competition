@@ -1,7 +1,7 @@
 import classes from "./otelSection.module.css";
 import Image from "next/image";
 
-import forwardArrow from "../../../public/carousel/forwardArrowWhite.svg";
+import forwardArrow from "../../../public/carousel/forwardArrowWhite.webp";
 
 const otelCard = [
   {

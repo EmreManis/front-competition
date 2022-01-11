@@ -7,7 +7,7 @@ import googleIcon from "../../../public/appIcons/googleplay.png";
 import huaweiIcon from "../../../public/appIcons/huawei.png";
 
 import googleSvg from "../../../public/appIcons/googleplay.svg";
-import appleSvg from "../../../public/appIcons/apple.svg";
+import appleSvg from "../../../public/appIcons/apple.jpg";
 import huaweiSvg from "../../../public/appIcons/huawei.svg";
 
 import appPic from "../../../public/pics/app.png";

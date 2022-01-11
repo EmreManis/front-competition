@@ -2,7 +2,7 @@ import Image from "next/image";
 import MobNavMenu from "./MobNavMenu";
 
 import account from "../../public/icons/person.svg";
-import logo from "../../public/mobileLogo.svg";
+import logo from "../../public/mobileLogo.webp";
 
 const MobileNavigation = () => {
   return (
@@ -10,7 +10,7 @@ const MobileNavigation = () => {
       <div className="flex">
         <MobNavMenu title="Menu"/>
       </div>
-      <Image src={logo} alt="tatilbudur.com" />
+      <Image src={logo} alt="tatilbudur.com" width={87.5} height={39}/>
       <button>
         <Image src={account} alt="" />
       </button>
