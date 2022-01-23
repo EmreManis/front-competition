@@ -5,8 +5,10 @@ import SubMenuNav from "../../../shared/SubMenuNav";
 const menuList= ["Son Gezdiğiniz Oteller", "En Çok Aranan Oteller", "Tükenmek Üzere Olan Oteller"];
 const isPadding = [false, true, false]
 
+// Validation should be considered when implementing unit test
+// To check if length(menuList) == length(isPadding)
 
-const NextSeasonNav = () => {
+const NextSeasNav = () => {
   return (
     <div className="pt-1.5 mb-2.5">
       <div className="flex justify-between">
@@ -19,4 +21,4 @@ const NextSeasonNav = () => {
   );
 };
 
-export default NextSeasonNav;
+export default NextSeasNav;

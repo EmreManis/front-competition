@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Card from "./Card";
-import NextSeasonNav from "./NextSeasNav";
+import NextSeasNav from "./NextSeasNav";
 
 import classes from "./nextSeasSect.module.css";
 
@@ -26,7 +26,7 @@ const NextSeason = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <NextSeasonNav />
+          <NextSeasNav />
         </div>
         <Card />
         <div className="md:hidden flex justify-center mt-8">

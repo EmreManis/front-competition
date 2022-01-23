@@ -4,7 +4,7 @@ const SubMenuButton = props => {
   return (
       <li className={props.padding}>
         <button onClick={props.onClick}>
-         <span className={`poppinsRegular poppins14 ${props.class} ${props.isActive && active}`}>
+         <span className={`poppinsRegular poppins14 ${props.class} ${props.changeActive && active}`}>
             {props.title}
           </span>
         </button>

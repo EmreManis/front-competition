@@ -1,19 +1,19 @@
 import CardItem from "./CardItem";
 
-import { dummyData } from "../../../data/dummyData";
+import { dummyHotelData } from "../../../data/dummyHotelData";
 
 const Card = () => {
   return (
     <div className="flex justify-between pt-7 md:pt-10 itemsMedia">
-      {dummyData.map((object, id) => {
+      {dummyHotelData.map((hotel, id) => {
         return (
           <CardItem 
           key={id} 
-          img={object.img} 
-          name={object.name} 
-          type={object.type}
-          location={object.location}
-          price={object.price}/>
+          img={hotel.img} 
+          name={hotel.name} 
+          type={hotel.type}
+          location={hotel.location}
+          price={hotel.price}/>
         );
       })}
     </div>

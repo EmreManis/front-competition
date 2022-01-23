@@ -14,7 +14,7 @@ import QuestionSection from "../components/sections/questionSection/QuestionSect
 import Banner from "../components/banner/Banner";
 
 
-const apiKey = process.env.GOOGLE_MAP_API_KEY;
+const API_KEY = process.env.GOOGLE_MAP_API_KEY;
 
 function HomePage() {
   return (
@@ -25,7 +25,7 @@ function HomePage() {
       </Head>
       <Script
         strategy="beforeInteractive"
-        src={`https://maps.googleapis.com/maps/api/js?key=${apiKey}&libraries=places&query=shaheen%20public`}
+        src={`https://maps.googleapis.com/maps/api/js?key=${API_KEY}&libraries=places&query=shaheen%20public`}
       ></Script>
       <SearchSection />
       <InfoSection />

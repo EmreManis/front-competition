@@ -9,11 +9,7 @@ const ChildAgeList = (props) => {
   let [popperElement, setPopperElement] = useState();
   let { styles, attributes } = usePopper(referenceElement, popperElement);
 
-  let childAge = [];
-
-  for (let i = 0; i <= 15; i++) {
-    childAge.push(i);
-  }
+  let childAge = Array.from(Array(16).keys());
 
   const [selectedAge, setSelectedAge] = useState(childAge[0]);
   return (

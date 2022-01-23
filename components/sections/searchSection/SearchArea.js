@@ -48,6 +48,7 @@ const SearchArea = () => {
   const initialState = {
       personNumber: 1,
       kidNumber: 0,
+          // In case of scaling, this needs to be converted to array
       kidAge: {
         age1: 0,
         age2: 0,

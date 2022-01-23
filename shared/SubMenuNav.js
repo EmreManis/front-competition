@@ -5,10 +5,10 @@ import SubMenuButton from "./SubMenuButton";
 import classes from "./subMenu.module.css";
 
 const SubMenuNav = (props) => {
-    const [isActive, setIsActive] = useState(0);
+    const [changeActive, setChangeActive] = useState(0);
 
     const activeHandler = (id) => {
-      setIsActive(id);
+      setChangeActive(id);
     }
 
     return (
@@ -20,7 +20,7 @@ const SubMenuNav = (props) => {
                   title={name} 
                   key={id} 
                   padding={`${props.givePadding[id] && classes.paddingMenu}`} 
-                  isActive={isActive === id ? true : false} 
+                  changeActive={changeActive === id ? true : false} 
                   onClick={() =>activeHandler(id)}/>
                   )
               })

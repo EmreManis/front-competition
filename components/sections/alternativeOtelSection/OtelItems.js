@@ -1,33 +1,33 @@
 import classes from "./otelSection.module.css";
 import Image from "next/image";
 
-import forwardArrow from "../../../public/carousel/forwardArrowWhite.webp";
+import forwardArrow from "../../../public/carousel/forwardArrowWhite.svg";
 
 const otelCard = [
   {
     name: "Kayak Otelleri",
     number: 2243,
-    pic: "./otel/pic1.png",
+    pic: "./otel/kayak__2243.png",
   },
   {
     name: "Termal Otelleri",
     number: 2243,
-    pic: "./otel/pic2.png",
+    pic: "./otel/termal__2243.png",
   },
   {
     name: "Yetişkin Otelleri",
     number: 2243,
-    pic: "./otel/pic3.png",
+    pic: "./otel/yetiskin__2243.png",
   },
   {
     name: "Çocuk Dostu Oteller",
     number: 2243,
-    pic: "./otel/pic4.png",
+    pic: "./otel/cocuk_dostu_2243.png",
   },
   {
     name: "Denize Sıfır Oteller",
     number: 2243,
-    pic: "./otel/pic5.png",
+    pic: "./otel/denize_sıfır_2243.png",
   },
 ];
 
