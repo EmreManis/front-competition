@@ -117,6 +117,11 @@ input {
   width: 85rem;
 }
 
+.paddingMenu {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 @media (min-width: 640px) {
   .itemsMedia {
       width: 73.75rem;
