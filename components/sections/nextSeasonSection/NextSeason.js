@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Card from "./Card";
 import NextSeasNav from "./NextSeasNav";
+import useActive from "../../../shared/menu-hook";
 
 import classes from "./nextSeasSect.module.css";
 
@@ -10,6 +11,9 @@ import forwardIcon from "../../../public/icons/forwardIcon.webp";
 import NextSeasMobileNav from "./NextSeasMobileNav";
 
 const NextSeason = () => {
+
+  const [activeId, activeHandler] = useActive();
+
   return (
     <section className="flex flex-row md:flex-col items-center mt-16">
       <div
@@ -26,9 +30,9 @@ const NextSeason = () => {
           </div>
         </div>
         <div className="hidden md:block">
-          <NextSeasNav />
+          <NextSeasNav activeId={activeId} onClick={activeHandler}/>
         </div>
-        <Card />
+        <Card activeMenuId={activeId}/>
         <div className="md:hidden flex justify-center mt-8">
           <Link href="/">
             <a>

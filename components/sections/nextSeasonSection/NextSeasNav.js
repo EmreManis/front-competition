@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import SubMenuButton from "../../../shared/SubMenuButton";
-import useActive from "../../../shared/menu-hook";
 
 const menuList= ["Son Gezdiğiniz Oteller", "En Çok Aranan Oteller", "Tükenmek Üzere Olan Oteller"];
 const isPadding = [false, true, false]
@@ -9,9 +8,7 @@ const isPadding = [false, true, false]
 // Validation should be considered when implementing unit test
 // To check if length(menuList) == length(isPadding)
 
-const NextSeasNav = () => {
-
-  const [changeActive, activeHandler] = useActive();
+const NextSeasNav = props => {
 
   return (
     <div className="pt-1.5 mb-2.5">
@@ -24,8 +21,8 @@ const NextSeasNav = () => {
                   title={name} 
                   key={id} 
                   padding={`${isPadding[id] && "paddingMenu"}`} 
-                  changeActiveId={changeActive === id ? true : false} 
-                  onClick={() => activeHandler(id)}/>
+                  changeActiveId={props.activeId === id ? true : false} 
+                  onClick={() => props.onClick(id)}/>
                   )
               })
             }

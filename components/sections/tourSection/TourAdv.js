@@ -5,20 +5,24 @@ import tourAdv from "../../../public/tour/touradv.webp";
 import tourResp from "../../../public/tour/tourResp.webp";
 import gemi from "../../../public/tour/gemi.webp";
 import kultur from "../../../public/tour/kultur.webp";
-import mavi from "../../../public/tour/mavi.webp";
 import hafta_sonu from "../../../public/tour/hafta_sonu.webp";
+import mavi from "../../../public/tour/mavi.webp";
 
 
-const TourAdv = () => {
+const TourAdv = (props) => {
+
+  const section = [tourAdv, gemi, kultur, hafta_sonu, mavi];
+  const respSection = [tourResp, gemi, kultur, hafta_sonu, mavi];
+
   return (
     <Fragment>
 
         <div className="mt-8 hidden md:block">
-          <Image src={tourAdv} alt="Roma" />
+          <Image src={section[props.activeSection]} alt="Roma" height={400} width={1180} className="borderRadius26"/>
         </div>
         <div className=" md:hidden">
           <div>
-            <Image src={tourResp} alt="Roma" height={500} width={500} />
+            <Image src={respSection[props.activeSection]} alt="Roma" height={500} width={500}/>
           </div>
         </div>
  

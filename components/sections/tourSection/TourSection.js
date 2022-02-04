@@ -17,7 +17,7 @@ const isPadding = [false, true, false, true, false];
 
 const TourSection = () => {
 
-  const [changeActive, activeHandler] = useActive();
+  const [activeId, activeHandler] = useActive();
 
   return (
     <section className="md:flex flex-col items-center md:mt-16">
@@ -38,7 +38,7 @@ const TourSection = () => {
                   title={name} 
                   key={id} 
                   padding={`${isPadding[id] && "paddingMenu"}`} 
-                  changeActiveId={changeActive === id ? true : false} 
+                  changeActiveId={activeId === id ? true : false} 
                   onClick={() => activeHandler(id)}/>
                   )
               })
@@ -46,7 +46,7 @@ const TourSection = () => {
           </ul>
           </div>
         </div>
-        <TourAdv />
+        <TourAdv activeSection={activeId}/>
         <Slide />
       </div>
     </section>
