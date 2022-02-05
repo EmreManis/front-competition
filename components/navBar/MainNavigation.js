@@ -16,9 +16,9 @@ const Navigation = () => {
         <Image src={logo} alt="tatil budur" width={218} height={42}/>
       </div>
       <div className="flex justify-center">
-        <NavigationItem title="Otel" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
-        <NavigationItem title="Turlar" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
-        <NavigationItem title="Kampanyalar" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
+        <NavigationItem title="Otel" type="Otelleri" countType="Otel" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
+        <NavigationItem title="Turlar" type="Turları" countType="Tur" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
+        <NavigationItem title="Kampanyalar" type="Kampanyaları"  countType="Kampanya" otelType={menuData.otelType} locations={menuData.locations} img={menuData.img}/>
       </div>
       <div className="flex justify-end items-center">
         <div

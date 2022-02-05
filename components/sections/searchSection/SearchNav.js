@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Image from "next/image";
 
 import classes from "./searchSection.module.css";
@@ -20,20 +19,9 @@ const menuList = [
     widthHeight: 13,
 
   },
-  {
-    name: 'Tur Ara',
-    image: turAra,
-    alt: "tatil budur tur"
-  },
 ]
 
-const SearchNav = () => {
-
-  const [isActive, setIsActive] = useState(0);
-
-  const activeHandler = (id) => {
-    setIsActive(id);
-  }
+const SearchNav = props => {
 
   return (
     <div className="md:mb-14 mb-6">
@@ -42,12 +30,12 @@ const SearchNav = () => {
           return (
             <li
               key={id}
-              className={`h-8 ${classes.inpMargin} ${isActive === id && classes.borderColorful} `}
+              className={`h-8 ${classes.inpMargin} ${props.isActive === id && classes.borderColorful} `}
             >
-              <button  isActive={isActive === id ? true : false} 
-                  onClick={() =>activeHandler(id)}>
+              <button  
+                  onClick={() =>props.activeHandler(id)}>
                 <Image src={obj.image} alt={obj.alt} width={obj.widthHeight} height={obj.widthHeight}/>
-                <span className={`pl-2 ${isActive === id ? "" : "poppinsRegular cyanTone"}`}>{obj.name}</span>
+                <span className={`pl-2 ${props.isActive === id ? "" : "poppinsRegular cyanTone"}`}>{obj.name}</span>
               </button>
             </li>
           );

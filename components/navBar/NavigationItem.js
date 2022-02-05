@@ -48,7 +48,7 @@ const NavigationItem = (props) => {
                 <div
                   className={`flex px-4 justify-between items-center ${classes.buttonSize}`}
                 >
-                  <p className="mr-8">{val}</p>
+                  <p className="mr-4">{val} {props.type}</p>
                   <span>
                     <Image src={menuForwardIcon} alt="" />
                   </span>
@@ -66,7 +66,7 @@ const NavigationItem = (props) => {
                       className="flex flex-col poppinsRegular poppins14 mb-3 "
                       key={index}
                     >
-                      {val} Otelleri
+                      {val} {props.type}
                     </span>
                   ))}
                 </div>
@@ -76,7 +76,7 @@ const NavigationItem = (props) => {
                       className={`flex flex-col poppinsRegular poppins12 poppinsRegular pb-0.5 mb-3 ${classes.numPadding}`}
                       key={index}
                     >
-                      {val} Otel
+                      {val} {props.countType}
                     </span>
                   ))}
                 </div>

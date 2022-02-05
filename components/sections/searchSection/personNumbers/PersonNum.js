@@ -30,8 +30,8 @@ const PersonNum = (props) => {
         className="w-full cyanTone pl-6 flex md:justify-start items-center"
       >
         <Image src={bedIcon} alt="tatil kisi" />
-        <span className="ml-1.5 poppinsRegular cyanTone">Kişi Sayısı</span>
-        <span className="md:ml-14 ml-56">
+        <span className="ml-1.5 poppinsRegular cyanTone">{props.isActive === 0 ?"Kişi " : "Yolcu " }Sayısı</span>
+        <span className="md:ml-12 ml-56">
           <Image src={arrowDownIcon} alt="kisi sayisi" width={7} height={5}/>
         </span>
       </Popover.Button>

@@ -1,7 +1,7 @@
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
 import LocalizationProvider from "@mui/lab/LocalizationProvider";
 
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import TextField from "@mui/material/TextField";
 import DateRangePicker from "@mui/lab/DateRangePicker";
 import trLocale from "date-fns/locale/tr";
@@ -14,8 +14,8 @@ export default function BasicDateRangePicker(props) {
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns} locale={trLocale}>
       <DateRangePicker
-        startText="Check-in"
-        endText="Check-out"
+        startText={props.isActive === 0 ? "Check-in" : "Gidiş Tarihi"}
+        endText={props.isActive === 0 ? "Check-out" : "Dönüş(Opsiyonel)"}
         value={props.value}
         minDate={today}
         onChange={( newValue) => props.dateHandler(newValue)}

@@ -13,7 +13,6 @@ const searchOptions = {
 };
 
 const LocationAutoComplete = (props) => {
-  // const [address, setAdress] = useState("");
   const [coordinates, setCoordinates] = useState({
     lat: null,
     lng: null,
@@ -26,29 +25,43 @@ const LocationAutoComplete = (props) => {
     setCoordinates(latLng);
   };
 
-//   const handleChange = address => {
-//     setAdress(address);
-//   };
-
-// console.log(address)
-
   return (
-    <div className="w-full cyanTone flex items-center justify-center ml-1">
+    <div className="cyanTone flex items-center justify-center ml-1">
       <PlacesAutocomplete
         value={props.address}
         searchOptions={searchOptions}
-        onChange={(value) =>props.addressHandler(value)}
+        onChange={(value) => props.addressHandler(value)}
         onSelect={handleSelect}
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => {
           return (
             <div className="relative">
-              <input
-                {...getInputProps({
-                  placeholder: "Otel, Şehir, Bölge veya Tema Adı",
-                })}
-              />
-              <div className={`${classes.popPosition} absolute w-96 z-10 borderRadius overflow-hidden`} >
+              {props.isActive === 0 ? (
+                <input
+                  {...getInputProps({
+                    placeholder: "Otel, Şehir, Bölge veya Tema Adı",
+                  })}
+                />
+              ) : (
+                <div className="flex">
+                  <input
+                  className={classes.ucakWidth}
+                    {...getInputProps({
+                      placeholder: "Nereden",
+                    })}
+                  />
+                  <input
+                   className={classes.ucakWidth}
+                    {...getInputProps({
+                      placeholder: "Nereye",
+                    })}
+                  />
+                </div>
+              )}
+
+              <div
+                className={`${classes.popPosition} absolute w-96 z-10 borderRadius overflow-hidden`}
+              >
                 {loading ? <div className="px-2">...loading</div> : null}
 
                 {suggestions.map((suggestion) => {

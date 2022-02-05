@@ -9,6 +9,7 @@ import classes from "./searchSection.module.css";
 import calendarIcon from "../../../public/icons/calendar.svg";
 import mapIcon from "../../../public/icons/map.svg";
 import PersonNum from "./personNumbers/PersonNum";
+import ucusAra from "../../../public/icons/ucusAra.webp";
 
 function reducer(familyInfo, action) {
   switch (action.type) {
@@ -31,7 +32,7 @@ function reducer(familyInfo, action) {
       if (familyInfo.personNumber < 6) {
         return {
           ...familyInfo,
-            personNumber: familyInfo.personNumber + 1,
+          personNumber: familyInfo.personNumber + 1,
         };
       } else return { ...familyInfo };
     case "decrementPerson":
@@ -44,15 +45,17 @@ function reducer(familyInfo, action) {
   }
 }
 
-const SearchArea = () => {
+const SearchArea = (props) => {
+  let isActive = props.isActive;
+
   const initialState = {
-      personNumber: 1,
-      kidNumber: 0,
-          // In case of scaling, this needs to be converted to array
-      kidAge: {
-        age1: 0,
-        age2: 0,
-      },
+    personNumber: 1,
+    kidNumber: 0,
+    // In case of scaling, this needs to be converted to array
+    kidAge: {
+      age1: 0,
+      age2: 0,
+    },
   };
 
   const [familyInfo, dispatch] = useReducer(reducer, initialState);
@@ -70,19 +73,30 @@ const SearchArea = () => {
     dispatch({ type: "setDate", payload: date });
   };
 
-  const addressHandler = address => {
+  const addressHandler = (address) => {
     setAdress(address);
   };
 
-console.log(address)
+  console.log(address);
 
   return (
     <form className="flex flex-col md:flex-row">
       <div
-        className={`flex border borderRadius ${classes.inpHeight}  ${classes.inpWidthOtel} mr-2.5 pl-6`}
+        className={`flex border borderRadius mr-2.5 ${classes.inpHeight}  ${classes.inpWidthOtel} pl-6`}
       >
-        <Image src={mapIcon} alt="tatil budur konaklama"/>
-        <LocationAutoComplete address={address} addressHandler={addressHandler}/>
+        <div className="flex items-center">
+          <Image
+            src={isActive === 0 ? mapIcon : ucusAra}
+            alt="tatil budur konaklama"
+            width={16}
+            height={20}
+          />
+        </div>
+        <LocationAutoComplete
+          address={address}
+          addressHandler={addressHandler}
+          isActive={isActive}
+        />
       </div>
       <div
         className={`flex border borderRadius my-2 md:my-0 ${classes.inpHeight} ${classes.inpWidthTarih} mr-2.5 pl-6`}
@@ -95,12 +109,17 @@ console.log(address)
             height={22}
           />
         </div>
-        <BasicDateRangePicker value={date} dateHandler={dateHandler} />
+        <BasicDateRangePicker
+          isActive={isActive}
+          value={date}
+          dateHandler={dateHandler}
+        />
       </div>
       <div
         className={`flex border borderRadius mb-4 md:mb-0 ${classes.inpHeight} ${classes.inpWidthKisi} mr-2.5`}
       >
         <PersonNum
+          isActive={isActive}
           stateHandler={familyHandler}
           personNumber={familyInfo.personNumber}
           kidNumber={familyInfo.kidNumber}
