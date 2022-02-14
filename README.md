@@ -2,9 +2,9 @@
 
 !!! Kullanim ihtiyacina gore sayfada bolumler dinamiklestirilebilir veya admin page eklenip aktiflestirilebilir.
 
-!!! Search area autoComplete icin Hotel api leri arastirdim ama ucretsiz demo app yapmak imkansiz gibi birsey. Development icin 
+!!! Search area autoComplete icin Hotel api leri arastirdim ama ucretsiz demo app yapmak ugrasmaya degmeyecek bircok kisitlamalari var. Development icin 
 30 dakikalik gecici tokenler ile istedigin dataya ulasilabiliyor ya da direkt firma bilgileri isteniyor. Google Places ile
-2 veya daha fazla kademede istenilen dataya ulasiliyor. 
+2 veya daha fazla kademede istenilen dataya ulasilabilir. 
 
 Will be added
 
